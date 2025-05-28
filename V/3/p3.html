@@ -3,94 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha Proyecto STEAM: Código Comunitario</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        header {
-            background-color: #1F1963; /* Azul Educate */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.1em;
-        }
-        .logo-placeholder {
-            width: 150px; 
-            height: auto;
-            margin-bottom:10px;
-            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='50' viewBox='0 0 150 50'%3E%3Crect width='150' height='50' fill='%23ddd'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='%23333'%3ELOGO AQUÍ%3C/text%3E%3C/svg%3E");
-        }
-        
-        .tabs { display: flex; background-color: #e9e9e9; border-bottom: 2px solid #005A9C; }
-        .tab-button { padding: 15px 25px; cursor: pointer; border: none; background-color: #e9e9e9; font-size: 1em; transition: background-color 0.3s, color 0.3s; }
-        .tab-button:hover { background-color: #d1d1d1; }
-        .tab-button.active { background-color: #005A9C; color: white; border-bottom: 2px solid #004070; }
-        .tab-content { display: none; padding: 20px; border: 1px solid #ddd; border-top: none; animation: fadeIn 0.5s; }
-        .tab-content.active { display: block; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-        h2 { color: #005A9C; border-bottom: 2px solid #28A745; /* Verde para Código Comunitario */ padding-bottom: 5px; margin-top: 30px; }
-        h2:first-child { margin-top: 0; }
-        h3 { color: #1E7E34; /* Verde oscuro */ margin-top: 20px; }
-
-        .steam-areas { display: flex; justify-content: space-around; padding: 15px 0; text-align: center; flex-wrap: wrap; }
-        .steam-area { margin: 10px; padding:10px; border: 1px solid #ddd; border-radius: 5px; width: 130px; }
-        .steam-area .icon { font-size: 2em; margin-bottom: 5px; width: 40px; height: 40px; background-color: #ccc; border-radius: 50%; margin: 0 auto 5px auto; display: flex; align-items: center; justify-content: center; }
-        
-        .fase-proyecto { background-color: #f9f9f9; border: 1px solid #eee; border-left: 5px solid #28A745; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
-        .fase-proyecto h3 { margin-top: 0; color: #1E7E34; }
-        .fase-proyecto .activity-title { font-weight: bold; color: #333; margin-top:15px; }
-        .fase-proyecto .img-placeholder { width: 100%; max-width: 300px; height: 150px; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center; text-align: center; color: #777; margin: 10px 0; border-radius: 4px; font-style: italic; }
-        .fase-proyecto ul, .fase-proyecto ol { padding-left: 20px; }
-        .fase-proyecto li { margin-bottom: 5px; }
-        .fase-proyecto ol li { list-style-type: decimal; }
-        .fase-proyecto ul li { list-style-type: disc; }
-        .fase-proyecto ul ul li { list-style-type: circle; }
-
-        .rubrica table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.9em;}
-        .rubrica th, .rubrica td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
-        .rubrica th { background-color: #005A9C; color: white; }
-        .rubrica td:first-child { font-weight: bold; background-color: #f0f0f0; width: 25%; }
-        .rubrica .nivel-bajo { background-color: #ffebee; } 
-        .rubrica .nivel-basico { background-color: #fff9c4; } 
-        .rubrica .nivel-alto { background-color: #e8f5e9; } 
-        .rubrica .nivel-superior { background-color: #d4edda; } 
-
-        .resource-list li, .evaluation-list li, .product-list li { margin-bottom: 8px; }
-        .icon-placeholder { display: inline-block; width: 20px; height: 20px; background-color: #ccc; border-radius: 3px; margin-right: 8px; vertical-align: middle; }
-        .designer-note { background-color: #fff0b3; border: 1px dashed #ffc107; padding: 10px; margin: 10px 0; font-style: italic; font-size: 0.9em; border-radius: 4px; }
-        .ebc-list { font-size: 0.9em; background-color: #f9f9f9; padding: 10px; border-radius: 4px; margin-top: 5px; border: 1px solid #e0e0e0;}
-        .ebc-list strong { color: #005A9C;}
-        .ebc-list ul { padding-left: 20px; margin-top: 5px;}
-    </style>
+    <title>Ficha Proyecto STEAM: Tecno-Innovadores Comunitarios</title>
+    <link rel="stylesheet" href="../../estilos.css">
+    <link rel="icon" type="image/x-icon" href="../../logo-qr.png">
 </head>
 <body>
     <div class="container">
         <header>
-		 <center><img src="P3BANNER.png" style="width: 100%; height: 100%;"  ></center>
+		 <center><img src="./P3BANNER.png" style="width: 100%; height: 100%;"  ></center>
 		 </header>
 
         <div class="tabs">
