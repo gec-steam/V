@@ -1,130 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha Proyecto STEAM: Tecno-Innovadores Comunitarios</title>
-    <link rel="stylesheet" href="../../estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <link rel="icon" type="image/x-icon" href="../../logo-qr.png">
 </head>
+
 <body>
     <div class="container">
         <header>
-		 <img src="./P3BANNER.webp" style="width: 100%;"  >
-		 </header>
-
-        <div class="tabs">
+            <img src="./P3BANNER.webp" style="width: 100%;">
+        </header>
+        <div class="tabs" style="overflow-x: auto; padding: 8px; border: 1px solid #ccc;">
             <button class="tab-button active" onclick="openTab(event, 'General')">Info General</button>
             <button class="tab-button" onclick="openTab(event, 'Objetivos')">Objetivos</button>
             <button class="tab-button" onclick="openTab(event, 'FasesActividades')">Fases y Actividades</button>
             <button class="tab-button" onclick="openTab(event, 'Evaluacion')">Evaluación y Recursos</button>
             <button class="tab-button" onclick="openTab(event, 'Rubrica')">Rúbrica</button>
         </div>
-		
-		<br>	</br>
-		<img src="./P3PODCATS.png" width="200px" height="50px" alt="imagen para audio"/>
-		
-		<audio controls>  <source src="./Código Comunitario_ Proyecto STEAM Ciclo V.wav" type="audio/mpeg">
-		</audio>
-
-		
-
-
-		 </header>
-
-        <!-- PESTAÑA 1: INFO GENERAL (CONTENIDO COMPLETO) -->
-        <div id="General" class="tab-content active">
+        <br />
+        <img src="./P3PODCATS.png" width="200px" height="50px" alt="imagen para audio" />
+        <audio controls>
+            <source src="./Código Comunitario_ Proyecto STEAM Ciclo V.wav" type="audio/mpeg">
+        </audio>
+        </header>
+        <div id="General" class="tab-content">
             <h2>Información General del Proyecto</h2>
             <p><strong>Ciclo Educativo:</strong> V</p>
             <p><strong>Grado(s):</strong> 10° y 11°</p>
 
             <h3>Áreas STEAM Integradas</h3>
-                      <div class="steam-areas">
-                					
-					<img src="./P3STEAM-01.webp" style="width: 60%; height: 100%;"  >
-						  
-						  
+            <div class="steam-areas">
+
+			<img src="../../STEAM.png" style="width: 100%;"  >
+
             </div>
-            <p><strong>Áreas Transversales:</strong> Lenguaje (documentación técnica, manuales de usuario, comunicación con usuarios), Ciencias Sociales (comprensión de dinámicas comunitarias, ética digital, impacto social de la tecnología), Emprendimiento (si se considera la sostenibilidad de la solución).</p>
+            <p><strong>Áreas Transversales:</strong> Lenguaje (documentación técnica, manuales de usuario, comunicación
+                con usuarios), Ciencias Sociales (comprensión de dinámicas comunitarias, ética digital, impacto social
+                de la tecnología), Emprendimiento (si se considera la sostenibilidad de la solución).</p>
 
             <h3>Idea Central del Proyecto</h3>
-			
-			<img src="./P3DISENAR-DESARROLLAR-SOFTWARE.png" style="width: 60%; height: 60%;"  >
-			
-                      <p>Diseñar y desarrollar una solución de software o aplicación digital (web, móvil, de escritorio) que responda de manera innovadora y efectiva a una necesidad o problema específico identificado dentro de la comunidad escolar o local, utilizando lenguajes de programación y herramientas de desarrollo adecuadas.</p>
+
+            <img src="./P3DISENAR-DESARROLLAR-SOFTWARE.png" style="width: 100%">
+
+            <p>Diseñar y desarrollar una solución de software o aplicación digital (web, móvil, de escritorio) que
+                responda de manera innovadora y efectiva a una necesidad o problema específico identificado dentro de la
+                comunidad escolar o local, utilizando lenguajes de programación y herramientas de desarrollo adecuadas.
+            </p>
 
             <h3>Problema o Desafío del Contexto a Abordar</h3>
-			
-			<img src="./P3PDCA-01.webp" style="width: 100%;"  >
-			
-			
-                      <p>Los estudiantes, mediante un proceso de indagación comunitaria y análisis de necesidades, identificarán y definirán un problema o desafío en su entorno que pueda ser significativamente mitigado o resuelto a través de una solución de software programada por ellos.</p>
+
+            <img src="./P3PDCA-01.webp" style="width: 100%;">
+
+
+            <p>Los estudiantes, mediante un proceso de indagación comunitaria y análisis de necesidades, identificarán y
+                definirán un problema o desafío en su entorno que pueda ser significativamente mitigado o resuelto a
+                través de una solución de software programada por ellos.</p>
             <p><em>Ejemplos de posibles áreas de desafíos (los estudiantes elegirán uno específico):</em></p>
             <ul>
-                <li> <strong>Organización Escolar/Comunitaria:</strong> Sistema de reserva de espacios o recursos (biblioteca, canchas, laboratorios), agenda de eventos comunitarios, plataforma de anuncios clasificados para la escuela.</li>
-                <li><strong>Apoyo al Aprendizaje:</strong> Herramienta para practicar un tema específico (ej. vocabulario, fórmulas matemáticas), plataforma para compartir recursos de estudio, sistema de tutorías entre pares.</li>
-                <li><strong>Información y Comunicación:</strong> Directorio digital de servicios locales, aplicación informativa sobre temas de interés comunitario (ej. rutas de transporte, puntos de reciclaje), sistema de encuestas o feedback para la institución.</li>
-                <li><strong>Gestión de Proyectos Pequeños:</strong> Herramienta simple para la gestión de tareas de clubes estudiantiles o pequeños proyectos comunitarios.</li>
-                <li><strong>Bienestar y Convivencia:</strong> Aplicación para reportar incidencias de manera anónima (si se maneja éticamente), plataforma para organizar actividades de integración, recordatorios de hábitos saludables.</li>
-                <li><strong>Cultura y Participación:</strong> Plataforma para promover eventos culturales locales, sistema de votación simple para decisiones escolares, juego educativo sobre historia local.</li>
+                <li> <strong>Organización Escolar/Comunitaria:</strong> Sistema de reserva de espacios o recursos
+                    (biblioteca, canchas, laboratorios), agenda de eventos comunitarios, plataforma de anuncios
+                    clasificados para la escuela.</li>
+                <li><strong>Apoyo al Aprendizaje:</strong> Herramienta para practicar un tema específico (ej.
+                    vocabulario, fórmulas matemáticas), plataforma para compartir recursos de estudio, sistema de
+                    tutorías entre pares.</li>
+                <li><strong>Información y Comunicación:</strong> Directorio digital de servicios locales, aplicación
+                    informativa sobre temas de interés comunitario (ej. rutas de transporte, puntos de reciclaje),
+                    sistema de encuestas o feedback para la institución.</li>
+                <li><strong>Gestión de Proyectos Pequeños:</strong> Herramienta simple para la gestión de tareas de
+                    clubes estudiantiles o pequeños proyectos comunitarios.</li>
+                <li><strong>Bienestar y Convivencia:</strong> Aplicación para reportar incidencias de manera anónima (si
+                    se maneja éticamente), plataforma para organizar actividades de integración, recordatorios de
+                    hábitos saludables.</li>
+                <li><strong>Cultura y Participación:</strong> Plataforma para promover eventos culturales locales,
+                    sistema de votación simple para decisiones escolares, juego educativo sobre historia local.</li>
             </ul>
         </div>
-
-        <!-- PESTAÑA 2: OBJETIVOS (CONTENIDO COMPLETO) -->
         <div id="Objetivos" class="tab-content">
             <h2>Objetivos del Proyecto</h2>
-                        <h3>Objetivo General</h3>
-            <p>Desarrollar un prototipo funcional de una solución de software que aborde una necesidad comunitaria identificada, aplicando el ciclo de vida del desarrollo de software, el pensamiento algorítmico y los principios de programación, mientras se fortalecen las competencias de indagación para el análisis de requerimientos y la argumentación matemática para la justificación de diseños lógicos y la eficiencia de las soluciones.</p>
+            <h3>Objetivo General</h3>
+            <p>Desarrollar un prototipo funcional de una solución de software que aborde una necesidad comunitaria
+                identificada, aplicando el ciclo de vida del desarrollo de software, el pensamiento algorítmico y los
+                principios de programación, mientras se fortalecen las competencias de indagación para el análisis de
+                requerimientos y la argumentación matemática para la justificación de diseños lógicos y la eficiencia de
+                las soluciones.</p>
 
             <h3>Objetivos Específicos de Aprendizaje</h3>
-            <p><strong>OE1 (Ciencia - Tecnología - Indagación):</strong> Aplicar un proceso de indagación para identificar y analizar a fondo una necesidad o problema comunitario, definiendo requerimientos claros para una solución de software y evaluando su usabilidad mediante pruebas con usuarios.</p>
-                        <div class="ebc-list">
+            <p><strong>OE1 (Ciencia - Tecnología - Indagación):</strong> Aplicar un proceso de indagación para
+                identificar y analizar a fondo una necesidad o problema comunitario, definiendo requerimientos claros
+                para una solución de software y evaluando su usabilidad mediante pruebas con usuarios.</p>
+            <div class="ebc-list">
                 <p><strong>EBC Tecnología e Informática (Grados 10-11):</strong></p>
                 <ul>
-                    <li>"Naturaleza y Evolución de la T&I": Construyo conocimientos y saberes de base tecnológica e informática para la toma de decisiones en el desarrollo de productos tecnológicos; Evalúo las maneras en que los procesos de innovación, investigación, desarrollo y experimentación producen nuevos saberes y conocimientos...</li>
-                    <li>"Solución de problemas con T&I": Propongo innovaciones tecnológicas e informáticas para la solución de problemas dando cumplimiento a restricciones y especificaciones técnicas y contextuales; Identifico condiciones, especificaciones y restricciones de diseño, utilizadas en una solución tecnológica o del campo de la informática verificando su cumplimiento en diversos contextos.</li>
+                    <li>"Naturaleza y Evolución de la T&I": Construyo conocimientos y saberes de base tecnológica e
+                        informática para la toma de decisiones en el desarrollo de productos tecnológicos; Evalúo las
+                        maneras en que los procesos de innovación, investigación, desarrollo y experimentación producen
+                        nuevos saberes y conocimientos...</li>
+                    <li>"Solución de problemas con T&I": Propongo innovaciones tecnológicas e informáticas para la
+                        solución de problemas dando cumplimiento a restricciones y especificaciones técnicas y
+                        contextuales; Identifico condiciones, especificaciones y restricciones de diseño, utilizadas en
+                        una solución tecnológica o del campo de la informática verificando su cumplimiento en diversos
+                        contextos.</li>
                 </ul>
-                <p><strong>Competencia de Indagación (Adaptada al contexto de desarrollo de software):</strong> Observar y analizar necesidades de usuarios, formular preguntas para elicitar requerimientos, consultar fuentes sobre soluciones existentes, plantear hipótesis sobre la utilidad de ciertas funcionalidades, diseñar pruebas de usabilidad, recolectar feedback de usuarios, organizar y analizar ese feedback para iterar el diseño.</p>
-                <p><strong>Habilidad del Siglo XXI:</strong> Pensamiento Crítico, Resolución de Problemas, Alfabetización de Datos (feedback de usuarios).</p>
+                <p><strong>Competencia de Indagación (Adaptada al contexto de desarrollo de software):</strong> Observar
+                    y analizar necesidades de usuarios, formular preguntas para elicitar requerimientos, consultar
+                    fuentes sobre soluciones existentes, plantear hipótesis sobre la utilidad de ciertas
+                    funcionalidades, diseñar pruebas de usabilidad, recolectar feedback de usuarios, organizar y
+                    analizar ese feedback para iterar el diseño.</p>
+                <p><strong>Habilidad del Siglo XXI:</strong> Pensamiento Crítico, Resolución de Problemas,
+                    Alfabetización de Datos (feedback de usuarios).</p>
             </div>
 
-            <p><strong>OE2 (Tecnología - Ingeniería - Matemáticas):</strong> Diseñar la arquitectura lógica y la interfaz de usuario de una solución de software, y desarrollar un prototipo funcional utilizando un lenguaje de programación y herramientas de desarrollo apropiadas, aplicando el pensamiento algorítmico.</p>
-                        <div class="ebc-list">
+            <p><strong>OE2 (Tecnología - Ingeniería - Matemáticas):</strong> Diseñar la arquitectura lógica y la
+                interfaz de usuario de una solución de software, y desarrollar un prototipo funcional utilizando un
+                lenguaje de programación y herramientas de desarrollo apropiadas, aplicando el pensamiento algorítmico.
+            </p>
+            <div class="ebc-list">
                 <p><strong>EBC Tecnología e Informática (Grados 10-11):</strong></p>
                 <ul>
-                    <li>"Naturaleza y Evolución de la T&I": Genero propuestas innovadoras para el uso y aprovechamiento de los recursos tecnológicos; Utilizo adecuadamente herramientas informáticas para la búsqueda, organización, procesamiento, sistematización, comunicación y difusión de ideas.</li>
-                    <li>"Solución de problemas con T&I": Diseño y aplico planes sistemáticos de mantenimiento correctivo en productos tecnológicos analógicos y digitales utilizadas en la vida diaria (conceptual, aplicado al software); Diseño, construyo y pruebo prototipos de artefactos, sistemas o procesos (software) como respuesta a una necesidad o problema...</li>
+                    <li>"Naturaleza y Evolución de la T&I": Genero propuestas innovadoras para el uso y aprovechamiento
+                        de los recursos tecnológicos; Utilizo adecuadamente herramientas informáticas para la búsqueda,
+                        organización, procesamiento, sistematización, comunicación y difusión de ideas.</li>
+                    <li>"Solución de problemas con T&I": Diseño y aplico planes sistemáticos de mantenimiento correctivo
+                        en productos tecnológicos analógicos y digitales utilizadas en la vida diaria (conceptual,
+                        aplicado al software); Diseño, construyo y pruebo prototipos de artefactos, sistemas o procesos
+                        (software) como respuesta a una necesidad o problema...</li>
                 </ul>
                 <p><strong>EBC Matemáticas (Grados 10-11) (Aplicado a la lógica y algoritmos):</strong></p>
                 <ul>
                     <li>"Pensamiento Numérico y Sistemas Numéricos" (uso de variables, tipos de datos)</li>
-                    <li>"Pensamiento Variacional y Sistemas Algebraicos y Analíticos" (representación de relaciones lógicas, funciones en programación).</li>
+                    <li>"Pensamiento Variacional y Sistemas Algebraicos y Analíticos" (representación de relaciones
+                        lógicas, funciones en programación).</li>
                 </ul>
-                <p><strong>Habilidad del Siglo XXI:</strong> Pensamiento Computacional, Creatividad, Diseño Tecnológico.</p>
+                <p><strong>Habilidad del Siglo XXI:</strong> Pensamiento Computacional, Creatividad, Diseño Tecnológico.
+                </p>
             </div>
-            
-            <p><strong>OE3 (Matemáticas - Argumentación):</strong> Utilizar la lógica matemática y la argumentación para justificar el diseño de algoritmos, la estructura de datos elegida (si aplica), la funcionalidad implementada, y para analizar la correctitud y (opcionalmente) la eficiencia básica de la solución programada.</p>
-                      <div class="ebc-list">
+
+            <p><strong>OE3 (Matemáticas - Argumentación):</strong> Utilizar la lógica matemática y la argumentación para
+                justificar el diseño de algoritmos, la estructura de datos elegida (si aplica), la funcionalidad
+                implementada, y para analizar la correctitud y (opcionalmente) la eficiencia básica de la solución
+                programada.</p>
+            <div class="ebc-list">
                 <p><strong>EBC Matemáticas (Grados 10-11):</strong></p>
                 <ul>
-                    <li>(Los EBC se aplican en la estructuración lógica del pensamiento para programar, en la validación de secuencias y condiciones).</li>
-                    <li>"Pensamiento Aleatorio y Sistemas de Datos" (si la app maneja datos y se requiere análisis estadístico simple de su uso o efectividad).</li>
+                    <li>(Los EBC se aplican en la estructuración lógica del pensamiento para programar, en la validación
+                        de secuencias y condiciones).</li>
+                    <li>"Pensamiento Aleatorio y Sistemas de Datos" (si la app maneja datos y se requiere análisis
+                        estadístico simple de su uso o efectividad).</li>
                 </ul>
-                <p><strong>Competencia de Argumentación (Adaptada a la programación):</strong> Validar la lógica de un algoritmo o fragmento de código, plantear afirmaciones sobre el comportamiento esperado del software bajo ciertas entradas, argumentar a favor de una estructura de control (if/else, bucles) específica para resolver un subproblema, establecer la validez de los resultados producidos por el software.</p>
+                <p><strong>Competencia de Argumentación (Adaptada a la programación):</strong> Validar la lógica de un
+                    algoritmo o fragmento de código, plantear afirmaciones sobre el comportamiento esperado del software
+                    bajo ciertas entradas, argumentar a favor de una estructura de control (if/else, bucles) específica
+                    para resolver un subproblema, establecer la validez de los resultados producidos por el software.
+                </p>
                 <p><strong>Habilidad del Siglo XXI:</strong> Pensamiento Crítico, Razonamiento Lógico, Comunicación.</p>
             </div>
 
-            <p><strong>OE4 (Arte - Comunicación - Colaboración):</strong> Diseñar una interfaz de usuario intuitiva y estéticamente agradable, colaborar efectivamente en equipo durante el ciclo de desarrollo, y comunicar la solución, su propósito y funcionamiento a diferentes audiencias.</p>
-                       <div class="ebc-list">
-                <p><strong>EBC Tecnología e Informática (Grados 10-11):</strong> "Tecnología, Informática y Sociedad": Participo en deliberaciones argumentadas relacionadas con las aplicaciones e innovaciones tecnológicas e informáticas en diversos campos; Evalúo los problemas que afectan directamente a mi comunidad...</p>
-                <p><strong>Habilidad del Siglo XXI:</strong> Colaboración, Comunicación, Creatividad, Alfabetización Digital.</p>
+            <p><strong>OE4 (Arte - Comunicación - Colaboración):</strong> Diseñar una interfaz de usuario intuitiva y
+                estéticamente agradable, colaborar efectivamente en equipo durante el ciclo de desarrollo, y comunicar
+                la solución, su propósito y funcionamiento a diferentes audiencias.</p>
+            <div class="ebc-list">
+                <p><strong>EBC Tecnología e Informática (Grados 10-11):</strong> "Tecnología, Informática y Sociedad":
+                    Participo en deliberaciones argumentadas relacionadas con las aplicaciones e innovaciones
+                    tecnológicas e informáticas en diversos campos; Evalúo los problemas que afectan directamente a mi
+                    comunidad...</p>
+                <p><strong>Habilidad del Siglo XXI:</strong> Colaboración, Comunicación, Creatividad, Alfabetización
+                    Digital.</p>
             </div>
         </div>
-
-        <!-- PESTAÑA 3: FASES Y ACTIVIDADES (SOLO ESTRUCTURA Y MARCADOR) -->
         <div id="FasesActividades" class="tab-content">
             <h2>Fases del Proyecto (ABP)</h2>
-                       <ol>
+            <ol>
                 <li>Fase 1: Conectando Códigos - La Tecnología al Servicio de la Gente</li>
                 <li>Fase 2: Desarrolladores en Misión - Definiendo Nuestro Reto Digital</li>
                 <li>Fase 3: Arquitectos de Software - Diseñando la Lógica y la Experiencia</li>
@@ -135,8 +184,8 @@
             </ol>
 
             <h2>Actividades Detalladas por Fase</h2>
-                       
-                      <ol>
+
+            <ol>
                 <li>Fase 1: Conectando Códigos - La Tecnología al Servicio de la Gente</li>
                 <li>Fase 2: Desarrolladores en Misión - Definiendo Nuestro Reto Digital</li>
                 <li>Fase 3: Arquitectos de Software - Diseñando la Lógica y la Experiencia</li>
@@ -147,97 +196,141 @@
             </ol>
 
             <h2>Actividades Detalladas por Fase</h2>
-           
+
             <div class="fase-proyecto">
                 <h3>Fase 1: Conectando Códigos - La Tecnología al Servicio de la Gente</h3>
                 <p class="activity-title">Actividad 1.1: Innovadores Digitales en Acción - ¡Software con Alma!</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Exploraremos ejemplos inspiradores de aplicaciones y software (desarrollados incluso por jóvenes) que han tenido un impacto social positivo en diversas comunidades (educación, salud, medio ambiente, organización comunitaria).</li>
-                    <li>Discutiremos: ¿Cómo puede un programa de computador o una app móvil mejorar la vida de las personas o resolver un problema en nuestra escuela o barrio?</li>
-                    <li>Haremos una lluvia de ideas inicial sobre tipos de problemas locales que podrían beneficiarse de una solución digital.</li>
+                    <li>Exploraremos ejemplos inspiradores de aplicaciones y software (desarrollados incluso por
+                        jóvenes) que han tenido un impacto social positivo en diversas comunidades (educación, salud,
+                        medio ambiente, organización comunitaria).</li>
+                    <li>Discutiremos: ¿Cómo puede un programa de computador o una app móvil mejorar la vida de las
+                        personas o resolver un problema en nuestra escuela o barrio?</li>
+                    <li>Haremos una lluvia de ideas inicial sobre tipos de problemas locales que podrían beneficiarse de
+                        una solución digital.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para entender que programar no es solo escribir código, sino una herramienta poderosa para crear soluciones útiles y con propósito, y para empezar a pensar como desarrolladores con conciencia social.</p>
-				
-                <img src="./P3FASEACTF1.1.webp" style="width: 100%;"  >
-                
-                <p class="activity-title">Actividad 1.2: Radar Comunitario - Sintonizando con las Necesidades Digitales</p>
+                <p><strong>¿Por qué es importante?</strong> Para entender que programar no es solo escribir código, sino
+                    una herramienta poderosa para crear soluciones útiles y con propósito, y para empezar a pensar como
+                    desarrolladores con conciencia social.</p>
+
+                <img src="./P3FASEACTF1.1.webp" style="width: 100%;">
+
+                <p class="activity-title">Actividad 1.2: Radar Comunitario - Sintonizando con las Necesidades Digitales
+                </p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Realizaremos una "escucha activa" en nuestra comunidad escolar: observaremos procesos, hablaremos con compañeros, profesores, personal administrativo (con permiso y respeto) para identificar tareas repetitivas, problemas de comunicación, falta de acceso a información, o necesidades no cubiertas que podrían simplificarse o mejorarse con software.</li>
-                    <li>Anotaremos estas observaciones, pensando en posibles "entradas", "procesos" y "salidas" de una hipotética solución digital.</li>
+                    <li>Realizaremos una "escucha activa" en nuestra comunidad escolar: observaremos procesos,
+                        hablaremos con compañeros, profesores, personal administrativo (con permiso y respeto) para
+                        identificar tareas repetitivas, problemas de comunicación, falta de acceso a información, o
+                        necesidades no cubiertas que podrían simplificarse o mejorarse con software.</li>
+                    <li>Anotaremos estas observaciones, pensando en posibles "entradas", "procesos" y "salidas" de una
+                        hipotética solución digital.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para comenzar el proceso de <strong>Indagación</strong> enfocado en el usuario y el contexto, identificando problemas reales desde la perspectiva de quienes los viven.</p>
-				
-                <img src="./P3FASEACTF1.2.webp" style="width: 100%;"  >
-				
+                <p><strong>¿Por qué es importante?</strong> Para comenzar el proceso de <strong>Indagación</strong>
+                    enfocado en el usuario y el contexto, identificando problemas reales desde la perspectiva de quienes
+                    los viven.</p>
+
+                <img src="./P3FASEACTF1.2.webp" style="width: 100%;">
+
             </div>
 
             <div class="fase-proyecto">
                 <h3>Fase 2: Desarrolladores en Misión - Definiendo Nuestro Reto Digital</h3>
-                 <p class="activity-title">Actividad 2.1: Equipos de Desarrollo Ágil</p>
-                 <p><strong>¿Qué vamos a hacer?</strong></p>
-                 <ol>
-                    <li>Formaremos equipos de desarrollo (3-4 estudiantes), idealmente con una mezcla de intereses (algunos pueden inclinarse más al diseño de interfaz, otros a la lógica de programación, otros a la gestión del proyecto).</li>
-                    <li>Definiremos roles iniciales (ej. Product Owner/Analista, Diseñador UX/UI, Desarrollador Líder, Tester/Documentador) que pueden ser rotativos.</li>
-                 </ol>
-                 <p><strong>¿Por qué es importante?</strong> Para simular un entorno de desarrollo colaborativo y distribuir responsabilidades, aprendiendo a trabajar en un proyecto de software como equipo.</p>
-				
-                 <img src="./P3FASEACTF2.1.webp" style="width: 100%;"  >
+                <p class="activity-title">Actividad 2.1: Equipos de Desarrollo Ágil</p>
+                <p><strong>¿Qué vamos a hacer?</strong></p>
+                <ol>
+                    <li>Formaremos equipos de desarrollo (3-4 estudiantes), idealmente con una mezcla de intereses
+                        (algunos pueden inclinarse más al diseño de interfaz, otros a la lógica de programación, otros a
+                        la gestión del proyecto).</li>
+                    <li>Definiremos roles iniciales (ej. Product Owner/Analista, Diseñador UX/UI, Desarrollador Líder,
+                        Tester/Documentador) que pueden ser rotativos.</li>
+                </ol>
+                <p><strong>¿Por qué es importante?</strong> Para simular un entorno de desarrollo colaborativo y
+                    distribuir responsabilidades, aprendiendo a trabajar en un proyecto de software como equipo.</p>
 
-                 <p class="activity-title">Actividad 2.2: Del Problema Observado a la Especificación de Requerimientos (Indagación y Análisis)</p>
-                 <p><strong>¿Qué vamos a hacer?</strong></p>
-                 <ol>
-                    <li>En equipo, revisaremos las necesidades identificadas en la Fase 1 y seleccionaremos 1-2 problemas que consideremos más viables y de mayor impacto para desarrollar una solución de software.</li>
+                <img src="./P3FASEACTF2.1.webp" style="width: 100%;">
+
+                <p class="activity-title">Actividad 2.2: Del Problema Observado a la Especificación de Requerimientos
+                    (Indagación y Análisis)</p>
+                <p><strong>¿Qué vamos a hacer?</strong></p>
+                <ol>
+                    <li>En equipo, revisaremos las necesidades identificadas en la Fase 1 y seleccionaremos 1-2
+                        problemas que consideremos más viables y de mayor impacto para desarrollar una solución de
+                        software.</li>
                     <li>Profundizaremos la <strong>Indagación</strong> para el problema elegido:
                         <ul>
-                            <li><strong>Definir Usuarios Clave:</strong> ¿Quiénes usarán nuestra aplicación? ¿Cuáles son sus características y necesidades tecnológicas?</li>
-                            <li><strong>Elicitar Requerimientos Funcionales:</strong> ¿Qué DEBE HACER la aplicación? (Ej. "El sistema debe permitir al usuario registrarse", "La app debe mostrar un calendario de eventos").</li>
-                            <li><strong>Elicitar Requerimientos No Funcionales (básicos):</strong> ¿Cómo debe ser la aplicación? (Ej. "Debe ser fácil de usar", "Debe cargar rápido", "Debe ser compatible con móviles Android").</li>
+                            <li><strong>Definir Usuarios Clave:</strong> ¿Quiénes usarán nuestra aplicación? ¿Cuáles son
+                                sus características y necesidades tecnológicas?</li>
+                            <li><strong>Elicitar Requerimientos Funcionales:</strong> ¿Qué DEBE HACER la aplicación?
+                                (Ej. "El sistema debe permitir al usuario registrarse", "La app debe mostrar un
+                                calendario de eventos").</li>
+                            <li><strong>Elicitar Requerimientos No Funcionales (básicos):</strong> ¿Cómo debe ser la
+                                aplicación? (Ej. "Debe ser fácil de usar", "Debe cargar rápido", "Debe ser compatible
+                                con móviles Android").</li>
                         </ul>
                     </li>
-                    <li>Priorizaremos los requerimientos para definir el alcance de un Producto Mínimo Viable (MVP).</li>
-                    <li>Redactaremos un "Documento de Visión del Producto" o "Especificación de Requerimientos Básica" para nuestra solución.</li>
-                 </ol>
-                 <p><strong>¿Por qué es importante?</strong> Para asegurarnos de que entendemos claramente qué vamos a construir y para quién, antes de escribir una sola línea de código. Una buena definición de requerimientos es clave para el éxito de cualquier software. ¡La <strong>Indagación</strong> aquí es crucial para no programar algo que nadie necesita o quiere!</p>
-                 
-				<img src="./P3FASEACTF2.2.webp" style="width: 100%;"  >
-				
+                    <li>Priorizaremos los requerimientos para definir el alcance de un Producto Mínimo Viable (MVP).
+                    </li>
+                    <li>Redactaremos un "Documento de Visión del Producto" o "Especificación de Requerimientos Básica"
+                        para nuestra solución.</li>
+                </ol>
+                <p><strong>¿Por qué es importante?</strong> Para asegurarnos de que entendemos claramente qué vamos a
+                    construir y para quién, antes de escribir una sola línea de código. Una buena definición de
+                    requerimientos es clave para el éxito de cualquier software. ¡La <strong>Indagación</strong> aquí es
+                    crucial para no programar algo que nadie necesita o quiere!</p>
+
+                <img src="./P3FASEACTF2.2.webp" style="width: 100%;">
+
             </div>
-            
+
             <div class="fase-proyecto">
                 <h3>Fase 3: Arquitectos de Software - Diseñando la Lógica y la Experiencia</h3>
-                <p class="activity-title">Actividad 3.1: Diseño de Algoritmos Clave (Pseudocódigo/Diagramas de Flujo)</p>
+                <p class="activity-title">Actividad 3.1: Diseño de Algoritmos Clave (Pseudocódigo/Diagramas de Flujo)
+                </p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Para las funcionalidades principales de nuestro MVP, diseñaremos los algoritmos (la secuencia de pasos lógicos) que el software seguirá.</li>
-                    <li>Representaremos estos algoritmos usando pseudocódigo (lenguaje natural estructurado) y/o diagramas de flujo.</li>
+                    <li>Para las funcionalidades principales de nuestro MVP, diseñaremos los algoritmos (la secuencia de
+                        pasos lógicos) que el software seguirá.</li>
+                    <li>Representaremos estos algoritmos usando pseudocódigo (lenguaje natural estructurado) y/o
+                        diagramas de flujo.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para planificar la lógica de nuestro programa antes de escribir código, lo que ayuda a prevenir errores y a asegurar que la solución sea coherente.</p>
-				
-                <img src="./P3FASEACTF3.1.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Para planificar la lógica de nuestro programa antes de
+                    escribir código, lo que ayuda a prevenir errores y a asegurar que la solución sea coherente.</p>
 
-                <p class="activity-title">Actividad 3.2: Diseño de la Interfaz de Usuario (UI) y Experiencia de Usuario (UX) (Wireframes/Mockups)</p>
+                <img src="./P3FASEACTF3.1.webp" style="width: 100%;">
+
+                <p class="activity-title">Actividad 3.2: Diseño de la Interfaz de Usuario (UI) y Experiencia de Usuario
+                    (UX) (Wireframes/Mockups)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Crearemos bocetos de baja fidelidad (wireframes) de las principales pantallas de nuestra aplicación, enfocándonos en la disposición de los elementos y el flujo de navegación.</li>
-                    <li>(Opcional, si hay tiempo/herramientas) Desarrollaremos mockups de mayor fidelidad que incluyan colores, tipografía e iconografía básica.</li>
-                    <li>Consideraremos principios básicos de usabilidad: ¿Es claro? ¿Es consistente? ¿Es eficiente para el usuario?</li>
+                    <li>Crearemos bocetos de baja fidelidad (wireframes) de las principales pantallas de nuestra
+                        aplicación, enfocándonos en la disposición de los elementos y el flujo de navegación.</li>
+                    <li>(Opcional, si hay tiempo/herramientas) Desarrollaremos mockups de mayor fidelidad que incluyan
+                        colores, tipografía e iconografía básica.</li>
+                    <li>Consideraremos principios básicos de usabilidad: ¿Es claro? ¿Es consistente? ¿Es eficiente para
+                        el usuario?</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para asegurar que nuestra aplicación no solo funcione bien, sino que también sea fácil y agradable de usar para nuestra comunidad.</p>
-               
-				<img src="./P3FASEACTF3.2.webp" style="width: 100%;"  >
-                
-                <p class="activity-title">Actividad 3.3: Planificación de la Estructura de Datos (si aplica, muy básico)</p>
+                <p><strong>¿Por qué es importante?</strong> Para asegurar que nuestra aplicación no solo funcione bien,
+                    sino que también sea fácil y agradable de usar para nuestra comunidad.</p>
+
+                <img src="./P3FASEACTF3.2.webp" style="width: 100%;">
+
+                <p class="activity-title">Actividad 3.3: Planificación de la Estructura de Datos (si aplica, muy básico)
+                </p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Si nuestra aplicación necesita almacenar y recuperar información (ej. lista de usuarios, eventos, recursos), pensaremos en cómo organizaríamos esos datos de forma lógica.</li>
-                    <li>Para aplicaciones simples, esto podría ser tan sencillo como definir qué información se guarda en variables, listas o archivos de texto. Para proyectos más complejos (raro en este nivel), se podría introducir la idea de una tabla de base de datos simple.</li>
+                    <li>Si nuestra aplicación necesita almacenar y recuperar información (ej. lista de usuarios,
+                        eventos, recursos), pensaremos en cómo organizaríamos esos datos de forma lógica.</li>
+                    <li>Para aplicaciones simples, esto podría ser tan sencillo como definir qué información se guarda
+                        en variables, listas o archivos de texto. Para proyectos más complejos (raro en este nivel), se
+                        podría introducir la idea de una tabla de base de datos simple.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Porque la forma en que se organizan los datos afecta cómo se puede acceder a ellos y cuán eficiente será la aplicación.</p>
-                
-				<img src="./P3FASEACTF3.3.webp" style="width: 100%;"  >
-				
+                <p><strong>¿Por qué es importante?</strong> Porque la forma en que se organizan los datos afecta cómo se
+                    puede acceder a ellos y cuán eficiente será la aplicación.</p>
+
+                <img src="./P3FASEACTF3.3.webp" style="width: 100%;">
+
             </div>
 
             <div class="fase-proyecto">
@@ -245,44 +338,57 @@
                 <p class="activity-title">Actividad 4.1: Configuración del Entorno de Desarrollo</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Nos aseguraremos de que todos en el equipo tengamos instalado y configurado el software necesario para programar (IDE, compilador/intérprete, librerías básicas).</li>
+                    <li>Nos aseguraremos de que todos en el equipo tengamos instalado y configurado el software
+                        necesario para programar (IDE, compilador/intérprete, librerías básicas).</li>
                     <li>Crearemos la estructura de carpetas de nuestro proyecto.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para tener una base sólida y organizada para empezar a codificar.</p>
-                
-				<img src="./P3FASEACTF4.1.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Para tener una base sólida y organizada para empezar a
+                    codificar.</p>
+
+                <img src="./P3FASEACTF4.1.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 4.2: Codificación de Funcionalidades (Enfoque en el MVP)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Comenzaremos a traducir nuestros algoritmos y diseños de interfaz en código real, utilizando el lenguaje de programación elegido.</li>
-                    <li>Nos enfocaremos primero en implementar las funcionalidades clave de nuestro Producto Mínimo Viable (MVP).</li>
-                    <li>Aplicaremos buenas prácticas de codificación: nombres de variables descriptivos, comentarios donde sea necesario, indentación correcta, funciones pequeñas.</li>
+                    <li>Comenzaremos a traducir nuestros algoritmos y diseños de interfaz en código real, utilizando el
+                        lenguaje de programación elegido.</li>
+                    <li>Nos enfocaremos primero en implementar las funcionalidades clave de nuestro Producto Mínimo
+                        Viable (MVP).</li>
+                    <li>Aplicaremos buenas prácticas de codificación: nombres de variables descriptivos, comentarios
+                        donde sea necesario, indentación correcta, funciones pequeñas.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> ¡Aquí es donde nuestra solución digital cobra vida! Escribir código limpio y funcional es esencial.</p>
-                
-				<img src="./P3FASEACTF4.2.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> ¡Aquí es donde nuestra solución digital cobra vida! Escribir
+                    código limpio y funcional es esencial.</p>
+
+                <img src="./P3FASEACTF4.2.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 4.3: Pruebas Unitarias Básicas y Depuración (Debugging)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>A medida que programamos cada función o módulo pequeño, realizaremos pruebas simples ("unitarias" a nivel conceptual) para verificar que funciona como se espera con diferentes entradas.</li>
-                    <li>Aprenderemos y aplicaremos técnicas básicas de depuración para encontrar y corregir errores ("bugs") en nuestro código.</li>
+                    <li>A medida que programamos cada función o módulo pequeño, realizaremos pruebas simples
+                        ("unitarias" a nivel conceptual) para verificar que funciona como se espera con diferentes
+                        entradas.</li>
+                    <li>Aprenderemos y aplicaremos técnicas básicas de depuración para encontrar y corregir errores
+                        ("bugs") en nuestro código.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para asegurar la calidad del código desde el principio y para desarrollar la habilidad crucial de encontrar y solucionar problemas en la programación.</p>
-                
-				<img src="./P3FASEACTF4.3.webp" style="width: 100%;"  >
-                
+                <p><strong>¿Por qué es importante?</strong> Para asegurar la calidad del código desde el principio y
+                    para desarrollar la habilidad crucial de encontrar y solucionar problemas en la programación.</p>
+
+                <img src="./P3FASEACTF4.3.webp" style="width: 100%;">
+
                 <p class="activity-title">Actividad 4.4: Integración de Módulos (si aplica)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Si hemos desarrollado diferentes partes de la aplicación por separado (ej. la lógica del "backend" y la interfaz del "frontend", o diferentes funciones), comenzaremos a integrarlas para que trabajen juntas.</li>
+                    <li>Si hemos desarrollado diferentes partes de la aplicación por separado (ej. la lógica del
+                        "backend" y la interfaz del "frontend", o diferentes funciones), comenzaremos a integrarlas para
+                        que trabajen juntas.</li>
                     <li>Probaremos que la comunicación entre módulos funciona correctamente.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para asegurar que todas las piezas de nuestra aplicación se ensamblan correctamente y forman un todo funcional.</p>
-                
-				<img src="./P3FASEACTF4.4.webp" style="width: 100%;"  >
-				
+                <p><strong>¿Por qué es importante?</strong> Para asegurar que todas las piezas de nuestra aplicación se
+                    ensamblan correctamente y forman un todo funcional.</p>
+
+                <img src="./P3FASEACTF4.4.webp" style="width: 100%;">
+
             </div>
 
             <div class="fase-proyecto">
@@ -290,136 +396,180 @@
                 <p class="activity-title">Actividad 5.1: Pruebas de Funcionalidad y Usabilidad con Usuarios (MVP)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Una vez que tengamos un MVP funcional, lo probaremos con usuarios reales (compañeros, profesores, miembros de la comunidad si es posible).</li>
-                    <li>Diseñaremos escenarios de prueba para que los usuarios intenten realizar tareas clave con nuestra aplicación.</li>
+                    <li>Una vez que tengamos un MVP funcional, lo probaremos con usuarios reales (compañeros,
+                        profesores, miembros de la comunidad si es posible).</li>
+                    <li>Diseñaremos escenarios de prueba para que los usuarios intenten realizar tareas clave con
+                        nuestra aplicación.</li>
                     <li>Observaremos cómo interactúan, dónde encuentran dificultades y qué comentarios tienen.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para obtener retroalimentación valiosa sobre la funcionalidad y la facilidad de uso de nuestra aplicación desde la perspectiva de quienes la usarán.</p>
-                
-				<img src="./P3FASEACTF5.1.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Para obtener retroalimentación valiosa sobre la
+                    funcionalidad y la facilidad de uso de nuestra aplicación desde la perspectiva de quienes la usarán.
+                </p>
+
+                <img src="./P3FASEACTF5.1.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 5.2: Recolección y Análisis de Feedback</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
                     <li>Sistematizaremos el feedback recibido: comentarios, problemas reportados, sugerencias.</li>
-                    <li>En equipo, analizaremos esta información para identificar los problemas más críticos o las mejoras más importantes.</li>
+                    <li>En equipo, analizaremos esta información para identificar los problemas más críticos o las
+                        mejoras más importantes.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para tomar decisiones informadas sobre cómo mejorar nuestra aplicación basándonos en la experiencia real de los usuarios.</p>
-                
-				<img src="./P3FASEACTF5.2.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Para tomar decisiones informadas sobre cómo mejorar nuestra
+                    aplicación basándonos en la experiencia real de los usuarios.</p>
+
+                <img src="./P3FASEACTF5.2.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 5.3: Iteración del Código y Diseño (Refactorización básica)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Basándonos en el feedback y nuestro propio análisis, realizaremos cambios y mejoras en el código y/o el diseño de la interfaz.</li>
-                    <li>Podríamos necesitar corregir errores ("bugs"), mejorar la usabilidad de una pantalla, o incluso refactorizar (reestructurar) parte del código para hacerlo más claro o eficiente sin cambiar su comportamiento externo.</li>
+                    <li>Basándonos en el feedback y nuestro propio análisis, realizaremos cambios y mejoras en el código
+                        y/o el diseño de la interfaz.</li>
+                    <li>Podríamos necesitar corregir errores ("bugs"), mejorar la usabilidad de una pantalla, o incluso
+                        refactorizar (reestructurar) parte del código para hacerlo más claro o eficiente sin cambiar su
+                        comportamiento externo.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Porque el desarrollo de software es un proceso iterativo. Rara vez la primera versión es la definitiva.</p>
-                
-				<img src="./P3FASEACTF5.3.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Porque el desarrollo de software es un proceso iterativo.
+                    Rara vez la primera versión es la definitiva.</p>
+
+                <img src="./P3FASEACTF5.3.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 5.4: Justificación de la Lógica del Código Final</p>
-                 <p><strong>¿Qué vamos a hacer?</strong></p>
+                <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Revisaremos nuestro código final y prepararemos argumentos para justificar por qué la lógica implementada es correcta y eficiente (para el alcance del proyecto) para resolver los requerimientos.</li>
+                    <li>Revisaremos nuestro código final y prepararemos argumentos para justificar por qué la lógica
+                        implementada es correcta y eficiente (para el alcance del proyecto) para resolver los
+                        requerimientos.</li>
                     <li>Nos aseguraremos de poder explicar cómo funcionan las partes clave de nuestro programa.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para demostrar nuestra comprensión del código que hemos escrito y para poder defender nuestras decisiones de programación.</p>
-                
-				<img src="./P3FASEACTF5.4.webp" style="width: 100%;"  >
-            
-			</div>
+                <p><strong>¿Por qué es importante?</strong> Para demostrar nuestra comprensión del código que hemos
+                    escrito y para poder defender nuestras decisiones de programación.</p>
+
+                <img src="./P3FASEACTF5.4.webp" style="width: 100%;">
+
+            </div>
 
             <div class="fase-proyecto">
                 <h3>Fase 6: ¡Lanzamiento Comunitario! - Presentando Nuestra Solución Digital</h3>
-                <p class="activity-title">Actividad 6.1: Preparación de la Demostración y Material de Presentación (Pitch)</p>
+                <p class="activity-title">Actividad 6.1: Preparación de la Demostración y Material de Presentación
+                    (Pitch)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Prepararemos una demostración en vivo de nuestra aplicación, enfocándonos en mostrar las funcionalidades clave y cómo resuelve el problema comunitario.</li>
-                    <li>Crearemos una presentación corta y atractiva (un "pitch") que explique: el problema, nuestra solución, el proceso de desarrollo, y el impacto potencial.</li>
-                    <li>Diseñaremos cualquier material de apoyo necesario (ej. un folleto simple, una página de "aterrizaje" web básica si es una app web).</li>
+                    <li>Prepararemos una demostración en vivo de nuestra aplicación, enfocándonos en mostrar las
+                        funcionalidades clave y cómo resuelve el problema comunitario.</li>
+                    <li>Crearemos una presentación corta y atractiva (un "pitch") que explique: el problema, nuestra
+                        solución, el proceso de desarrollo, y el impacto potencial.</li>
+                    <li>Diseñaremos cualquier material de apoyo necesario (ej. un folleto simple, una página de
+                        "aterrizaje" web básica si es una app web).</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para comunicar de manera efectiva el valor de nuestro trabajo y para que otros puedan entender y apreciar nuestra solución digital.</p>
-                
-				<img src="./P3FASEACTF6.1.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Para comunicar de manera efectiva el valor de nuestro
+                    trabajo y para que otros puedan entender y apreciar nuestra solución digital.</p>
+
+                <img src="./P3FASEACTF6.1.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 6.2: Elaboración de Guía de Usuario Básica</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Redactaremos una guía de usuario sencilla y clara que explique cómo instalar/acceder a nuestra aplicación y cómo usar sus funciones principales.</li>
+                    <li>Redactaremos una guía de usuario sencilla y clara que explique cómo instalar/acceder a nuestra
+                        aplicación y cómo usar sus funciones principales.</li>
                     <li>Usaremos capturas de pantalla y un lenguaje accesible para el usuario final.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para que las personas que no participaron en el desarrollo puedan usar nuestra aplicación fácilmente.</p>
-                
-				<img src="./P3FASEACTF6.2.webp" style="width: 100%;"  >
-                
-                <p class="activity-title">Actividad 6.3: Evento de Presentación de Proyectos (Feria de Software Escolar o similar)</p>
+                <p><strong>¿Por qué es importante?</strong> Para que las personas que no participaron en el desarrollo
+                    puedan usar nuestra aplicación fácilmente.</p>
+
+                <img src="./P3FASEACTF6.2.webp" style="width: 100%;">
+
+                <p class="activity-title">Actividad 6.3: Evento de Presentación de Proyectos (Feria de Software Escolar
+                    o similar)</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Presentaremos nuestras soluciones de software a la comunidad escolar (compañeros, profesores, directivos) y, si es posible, a miembros de la comunidad local o usuarios potenciales.</li>
+                    <li>Presentaremos nuestras soluciones de software a la comunidad escolar (compañeros, profesores,
+                        directivos) y, si es posible, a miembros de la comunidad local o usuarios potenciales.</li>
                     <li>Realizaremos nuestras demostraciones, responderemos preguntas y recogeremos feedback final.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para celebrar nuestro logro, obtener reconocimiento por nuestro esfuerzo y, potencialmente, inspirar a otros o incluso encontrar vías para que nuestra solución se use realmente.</p>
-                
-				<img src="./P3FASEACTF6.3.webp" style="width: 100%;"  >
-				
+                <p><strong>¿Por qué es importante?</strong> Para celebrar nuestro logro, obtener reconocimiento por
+                    nuestro esfuerzo y, potencialmente, inspirar a otros o incluso encontrar vías para que nuestra
+                    solución se use realmente.</p>
+
+                <img src="./P3FASEACTF6.3.webp" style="width: 100%;">
+
             </div>
 
             <div class="fase-proyecto">
                 <h3>Fase 7: Código Fuente de Aprendizaje - Reflexionando sobre el Viaje del Desarrollo</h3>
-                <p class="activity-title">Actividad 7.1: Reflexión Individual y de Equipo sobre el Ciclo de Desarrollo</p>
+                <p class="activity-title">Actividad 7.1: Reflexión Individual y de Equipo sobre el Ciclo de Desarrollo
+                </p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Individualmente, escribiremos una reflexión sobre: el mayor desafío técnico que superamos, cómo aplicamos la indagación para entender al usuario, un ejemplo de argumentación lógica que usamos en nuestro código, y qué habilidad de desarrollo de software nos gustaría seguir mejorando.</li>
-                    <li>En equipo, discutiremos: ¿Qué funcionó bien en nuestro proceso de desarrollo ágil (o el que hayamos usado)? ¿Qué podríamos mejorar en la colaboración y gestión de un proyecto de software futuro? ¿Cuál fue el mayor "¡Eureka!" o momento de aprendizaje del equipo?</li>
+                    <li>Individualmente, escribiremos una reflexión sobre: el mayor desafío técnico que superamos, cómo
+                        aplicamos la indagación para entender al usuario, un ejemplo de argumentación lógica que usamos
+                        en nuestro código, y qué habilidad de desarrollo de software nos gustaría seguir mejorando.</li>
+                    <li>En equipo, discutiremos: ¿Qué funcionó bien en nuestro proceso de desarrollo ágil (o el que
+                        hayamos usado)? ¿Qué podríamos mejorar en la colaboración y gestión de un proyecto de software
+                        futuro? ¿Cuál fue el mayor "¡Eureka!" o momento de aprendizaje del equipo?</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para consolidar los aprendizajes técnicos y metodológicos, y para desarrollar la metacognición sobre nuestro proceso como desarrolladores.</p>
-                
-				<img src="./P3FASEACTF7.1.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Para consolidar los aprendizajes técnicos y metodológicos, y
+                    para desarrollar la metacognición sobre nuestro proceso como desarrolladores.</p>
+
+                <img src="./P3FASEACTF7.1.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 7.2: Discusión sobre Ética Digital y Futuro del Proyecto</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Reflexionaremos sobre las implicaciones éticas de nuestra solución: ¿Cómo maneja los datos del usuario (si aplica)? ¿Es accesible para todos los usuarios potenciales? ¿Podría tener algún impacto no deseado?</li>
-                    <li>Discutiremos si nuestro proyecto tiene potencial para continuar desarrollándose, ser publicado (ej. en una tienda de apps si es móvil y cumple requisitos, o como proyecto open source en GitHub), o ser entregado a la comunidad para su uso y posible mantenimiento.</li>
+                    <li>Reflexionaremos sobre las implicaciones éticas de nuestra solución: ¿Cómo maneja los datos del
+                        usuario (si aplica)? ¿Es accesible para todos los usuarios potenciales? ¿Podría tener algún
+                        impacto no deseado?</li>
+                    <li>Discutiremos si nuestro proyecto tiene potencial para continuar desarrollándose, ser publicado
+                        (ej. en una tienda de apps si es móvil y cumple requisitos, o como proyecto open source en
+                        GitHub), o ser entregado a la comunidad para su uso y posible mantenimiento.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para fomentar la responsabilidad como creadores de tecnología y para pensar en el ciclo de vida completo de un producto de software.</p>
-                
-				<img src="./P3FASEACTF7.2.webp" style="width: 100%;"  >
+                <p><strong>¿Por qué es importante?</strong> Para fomentar la responsabilidad como creadores de
+                    tecnología y para pensar en el ciclo de vida completo de un producto de software.</p>
+
+                <img src="./P3FASEACTF7.2.webp" style="width: 100%;">
 
                 <p class="activity-title">Actividad 7.3: Celebración de los "Lanzamientos"</p>
                 <p><strong>¿Qué vamos a hacer?</strong></p>
                 <ol>
-                    <li>Celebraremos el esfuerzo, la creatividad, la resolución de problemas y el aprendizaje de todos los equipos a lo largo del proyecto.</li>
+                    <li>Celebraremos el esfuerzo, la creatividad, la resolución de problemas y el aprendizaje de todos
+                        los equipos a lo largo del proyecto.</li>
                     <li>Se pueden entregar reconocimientos simbólicos.</li>
                 </ol>
-                <p><strong>¿Por qué es importante?</strong> Para reconocer el arduo trabajo que implica desarrollar software y para fomentar una cultura positiva de creación y colaboración.</p>
-                
-				<img src="./P3FASEACTF7.3.webp" style="width: 100%;"  >
-				
+                <p><strong>¿Por qué es importante?</strong> Para reconocer el arduo trabajo que implica desarrollar
+                    software y para fomentar una cultura positiva de creación y colaboración.</p>
+
+                <img src="./P3FASEACTF7.3.webp" style="width: 100%;">
+
             </div>
         </div>
-
-        <!-- PESTAÑA 4: EVALUACIÓN Y RECURSOS (SOLO ESTRUCTURA Y MARCADOR) -->
         <div id="Evaluacion" class="tab-content">
-                      <h2>Recursos y Materiales</h2>
-                     <ul class="resource-list">
-                <li><strong>Espacios:</strong> Laboratorio de informática con buena conexión a internet, aulas para trabajo en equipo y presentaciones.</li>
+            <h2>Recursos y Materiales</h2>
+            <ul class="resource-list">
+                <li><strong>Espacios:</strong> Laboratorio de informática con buena conexión a internet, aulas para
+                    trabajo en equipo y presentaciones.</li>
                 <li> <strong>Equipamiento:</strong>
                     <ul>
-                        <li>Computadores con software de desarrollo instalado (IDE para Python como Thonny o VS Code, navegadores web con herramientas de desarrollador, MIT App Inventor online, editores de texto como Sublime Text o Notepad++).</li>
-                        <li>Acceso a plataformas de desarrollo web (ej. Glitch, Replit, CodeSandbox si se desarrollan apps web) o móviles.</li>
+                        <li>Computadores con software de desarrollo instalado (IDE para Python como Thonny o VS Code,
+                            navegadores web con herramientas de desarrollador, MIT App Inventor online, editores de
+                            texto como Sublime Text o Notepad++).</li>
+                        <li>Acceso a plataformas de desarrollo web (ej. Glitch, Replit, CodeSandbox si se desarrollan
+                            apps web) o móviles.</li>
                         <li>Dispositivos móviles para probar apps (si aplica).</li>
-                        <li>Software de diseño de interfaces (opcional, ej. Figma, Balsamiq Mockups en versión gratuita o educativa).</li>
+                        <li>Software de diseño de interfaces (opcional, ej. Figma, Balsamiq Mockups en versión gratuita
+                            o educativa).</li>
                     </ul>
                 </li>
-                <li> <strong>Humanos:</strong> Docente facilitador con conocimientos de programación básica/intermedia en el lenguaje elegido. Posibles mentores de la industria del software (exalumnos, padres).</li>
-                <li> <strong>Digitales:</strong> Documentación oficial de lenguajes de programación, tutoriales en línea (Codecademy, W3Schools, freeCodeCamp, canales de YouTube educativos), foros de programadores (Stack Overflow), repositorios de código (GitHub para consulta de ejemplos).</li>
-                <li> <strong>Impresos:</strong> Guías de sintaxis del lenguaje, EBC de Tecnología e Informática y Matemáticas.</li>
+                <li> <strong>Humanos:</strong> Docente facilitador con conocimientos de programación básica/intermedia
+                    en el lenguaje elegido. Posibles mentores de la industria del software (exalumnos, padres).</li>
+                <li> <strong>Digitales:</strong> Documentación oficial de lenguajes de programación, tutoriales en línea
+                    (Codecademy, W3Schools, freeCodeCamp, canales de YouTube educativos), foros de programadores (Stack
+                    Overflow), repositorios de código (GitHub para consulta de ejemplos).</li>
+                <li> <strong>Impresos:</strong> Guías de sintaxis del lenguaje, EBC de Tecnología e Informática y
+                    Matemáticas.</li>
             </ul>
 
             <h2>Estrategias de Evaluación</h2>
-                         <h3>Evaluación Formativa</h3>
+            <h3>Evaluación Formativa</h3>
             <ul class="evaluation-list">
                 <li>Revisión de diagramas de flujo y pseudocódigo de algoritmos.</li>
                 <li>Revisión de código por pares (code reviews) y del docente.</li>
@@ -430,15 +580,21 @@
             </ul>
             <h3>Evaluación Sumativa</h3>
             <ul class="evaluation-list">
-                <li><strong>Prototipo Funcional del Software/Aplicación:</strong> Calidad del código, cumplimiento de requerimientos funcionales y no funcionales básicos, usabilidad. (Evaluado con Rúbrica).</li>
-                <li><strong>Documentación del Proyecto:</strong> Especificación de requerimientos, diseño de la solución (arquitectura, diagramas de flujo/UML si aplica), manual de usuario básico, comentarios en el código. (Evaluado con Rúbrica).</li>
-                <li><strong>Presentación y Demostración del Software:</strong> Explicación del problema, la solución, las decisiones de diseño y programación, y demostración en vivo.</li>
-                <li><strong>Defensa del Código y Diseño Lógico:</strong> Capacidad de argumentar por qué se eligieron ciertos algoritmos, estructuras de control o diseños de interfaz.</li>
+                <li><strong>Prototipo Funcional del Software/Aplicación:</strong> Calidad del código, cumplimiento de
+                    requerimientos funcionales y no funcionales básicos, usabilidad. (Evaluado con Rúbrica).</li>
+                <li><strong>Documentación del Proyecto:</strong> Especificación de requerimientos, diseño de la solución
+                    (arquitectura, diagramas de flujo/UML si aplica), manual de usuario básico, comentarios en el
+                    código. (Evaluado con Rúbrica).</li>
+                <li><strong>Presentación y Demostración del Software:</strong> Explicación del problema, la solución,
+                    las decisiones de diseño y programación, y demostración en vivo.</li>
+                <li><strong>Defensa del Código y Diseño Lógico:</strong> Capacidad de argumentar por qué se eligieron
+                    ciertos algoritmos, estructuras de control o diseños de interfaz.</li>
             </ul>
-            
+
             <h2>Producto(s) Final(es) del Proyecto</h2>
-                      <ol class="product-list">
-                <li><strong>Prototipo funcional del software o aplicación digital</strong> (código fuente ejecutable y/o aplicación instalable/accesible online).</li>
+            <ol class="product-list">
+                <li><strong>Prototipo funcional del software o aplicación digital</strong> (código fuente ejecutable y/o
+                    aplicación instalable/accesible online).</li>
                 <li><strong>Documentación Técnica y de Usuario del Proyecto:</strong>
                     <ul>
                         <li>Documento de requerimientos y visión del producto.</li>
@@ -448,31 +604,43 @@
                         <li>Reflexión sobre el proceso de desarrollo, desafíos y aprendizajes.</li>
                     </ul>
                 </li>
-                <li><strong>Presentación multimedia y demostración en vivo</strong> de la solución de software, explicando su propósito, funcionamiento y el proceso de desarrollo.</li>
+                <li><strong>Presentación multimedia y demostración en vivo</strong> de la solución de software,
+                    explicando su propósito, funcionamiento y el proceso de desarrollo.</li>
             </ol>
-            
+
             <h3>Vinculación con el Contexto Comunitario y/o Global</h3>
-                        <p><strong>Local:</strong> La solución está directamente diseñada para una necesidad de la comunidad escolar o local. Se buscará obtener feedback real de los usuarios potenciales durante el desarrollo y la prueba. Se podría incluso intentar un "lanzamiento beta" dentro de la comunidad.</p>
-            <p><strong>Global:</strong> Conectar con tendencias globales en desarrollo de software con impacto social (Tech for Good), el movimiento de código abierto (Open Source), la importancia de la ética digital, la privacidad de datos, y la accesibilidad en el diseño de software.</p>
-            
+            <p><strong>Local:</strong> La solución está directamente diseñada para una necesidad de la comunidad escolar
+                o local. Se buscará obtener feedback real de los usuarios potenciales durante el desarrollo y la prueba.
+                Se podría incluso intentar un "lanzamiento beta" dentro de la comunidad.</p>
+            <p><strong>Global:</strong> Conectar con tendencias globales en desarrollo de software con impacto social
+                (Tech for Good), el movimiento de código abierto (Open Source), la importancia de la ética digital, la
+                privacidad de datos, y la accesibilidad en el diseño de software.</p>
+
             <h3>Duración Estimada del Proyecto</h3>
-                      <p>Entre 10 y 14 semanas, dada la naturaleza iterativa del desarrollo de software y la necesidad de aprender/aplicar conceptos de programación. Se requiere una dedicación de 3-5 horas de clase semanales (Tecnología/Informática, con posible apoyo de Matemáticas), más trabajo autónomo significativo.</p>
-            
+            <p>Entre 10 y 14 semanas, dada la naturaleza iterativa del desarrollo de software y la necesidad de
+                aprender/aplicar conceptos de programación. Se requiere una dedicación de 3-5 horas de clase semanales
+                (Tecnología/Informática, con posible apoyo de Matemáticas), más trabajo autónomo significativo.</p>
+
             <h3>Consideraciones para la Inclusión y Equidad</h3>
-                       <ul>
-                <li><strong>Elección del Lenguaje/Plataforma:</strong> Ofrecer opciones que se adapten a diferentes niveles de habilidad previa en programación (ej. programación por bloques como MIT App Inventor para iniciación, Python o JavaScript para un nivel intermedio).</li>
-                <li><strong>Roles Diversificados en el Equipo:</strong> No todos necesitan ser programadores expertos; roles como diseñador UX/UI, tester, documentador, o gestor de proyecto son igualmente importantes.</li>
-                <li><strong>Pair Programming (Programación por Pares):</strong> Puede ser una estrategia útil para que estudiantes con diferentes niveles de habilidad colaboren y aprendan juntos en la codificación.</li>
-                <li><strong>Recursos de Aprendizaje Variados:</strong> Proveer tutoriales en video, guías escritas, ejemplos de código, para diferentes estilos de aprendizaje.</li>
-                <li><strong>Enfoque en el MVP:</strong> Ayudar a los equipos a definir un alcance realista para su Producto Mínimo Viable para evitar frustraciones.</li>
+            <ul>
+                <li><strong>Elección del Lenguaje/Plataforma:</strong> Ofrecer opciones que se adapten a diferentes
+                    niveles de habilidad previa en programación (ej. programación por bloques como MIT App Inventor para
+                    iniciación, Python o JavaScript para un nivel intermedio).</li>
+                <li><strong>Roles Diversificados en el Equipo:</strong> No todos necesitan ser programadores expertos;
+                    roles como diseñador UX/UI, tester, documentador, o gestor de proyecto son igualmente importantes.
+                </li>
+                <li><strong>Pair Programming (Programación por Pares):</strong> Puede ser una estrategia útil para que
+                    estudiantes con diferentes niveles de habilidad colaboren y aprendan juntos en la codificación.</li>
+                <li><strong>Recursos de Aprendizaje Variados:</strong> Proveer tutoriales en video, guías escritas,
+                    ejemplos de código, para diferentes estilos de aprendizaje.</li>
+                <li><strong>Enfoque en el MVP:</strong> Ayudar a los equipos a definir un alcance realista para su
+                    Producto Mínimo Viable para evitar frustraciones.</li>
             </ul>
         </div>
-
-        <!-- PESTAÑA 5: RÚBRICA (SOLO ESTRUCTURA Y MARCADOR) -->
         <div id="Rubrica" class="tab-content">
             <h2>Rúbrica Detallada de Evaluación del Proyecto: "Código Comunitario"</h2>
-                        
-                               <div class="rubrica">
+
+            <div class="rubrica">
                 <table>
                     <thead>
                         <tr>
@@ -486,59 +654,86 @@
                     <tbody>
                         <tr>
                             <td>1. Indagación de Necesidades y Definición de Requerimientos</td>
-                            <td class="nivel-bajo">Problema comunitario y requerimientos de software vagos o mal definidos. Poca investigación de usuarios/contexto.</td>
-                            <td class="nivel-basico">Problema y requerimientos básicos definidos, pero con falta de profundidad en la indagación de necesidades de usuario.</td>
-                            <td class="nivel-alto">Problema y requerimientos claramente definidos, basados en una buena indagación de las necesidades del usuario y el contexto.</td>
-                            <td class="nivel-superior">Problema y requerimientos excelentemente definidos, con una indagación exhaustiva y empática de las necesidades del usuario y el contexto.</td>
+                            <td class="nivel-bajo">Problema comunitario y requerimientos de software vagos o mal
+                                definidos. Poca investigación de usuarios/contexto.</td>
+                            <td class="nivel-basico">Problema y requerimientos básicos definidos, pero con falta de
+                                profundidad en la indagación de necesidades de usuario.</td>
+                            <td class="nivel-alto">Problema y requerimientos claramente definidos, basados en una buena
+                                indagación de las necesidades del usuario y el contexto.</td>
+                            <td class="nivel-superior">Problema y requerimientos excelentemente definidos, con una
+                                indagación exhaustiva y empática de las necesidades del usuario y el contexto.</td>
                         </tr>
                         <tr>
                             <td>2. Diseño Lógico y Algorítmico de la Solución de Software</td>
-                            <td class="nivel-bajo">Diseño lógico inexistente o con errores graves. Algoritmos ineficientes o incorrectos. Poca claridad en la estructura.</td>
-                            <td class="nivel-basico">Diseño lógico simple, con algunos algoritmos funcionales pero mejorables. Estructura del software con algunas deficiencias.</td>
-                            <td class="nivel-alto">Buen diseño lógico y algorítmico, con algoritmos correctos y razonablemente eficientes. Estructura del software clara y organizada.</td>
-                            <td class="nivel-superior">Excelente diseño lógico y algorítmico, con algoritmos eficientes, elegantes y bien estructurados. Arquitectura de software robusta.</td>
+                            <td class="nivel-bajo">Diseño lógico inexistente o con errores graves. Algoritmos
+                                ineficientes o incorrectos. Poca claridad en la estructura.</td>
+                            <td class="nivel-basico">Diseño lógico simple, con algunos algoritmos funcionales pero
+                                mejorables. Estructura del software con algunas deficiencias.</td>
+                            <td class="nivel-alto">Buen diseño lógico y algorítmico, con algoritmos correctos y
+                                razonablemente eficientes. Estructura del software clara y organizada.</td>
+                            <td class="nivel-superior">Excelente diseño lógico y algorítmico, con algoritmos eficientes,
+                                elegantes y bien estructurados. Arquitectura de software robusta.</td>
                         </tr>
                         <tr>
                             <td>3. Implementación (Codificación) y Funcionalidad del Prototipo</td>
-                            <td class="nivel-bajo">El código tiene múltiples errores graves, no compila/ejecuta, o el prototipo es apenas funcional y no cumple requerimientos.</td>
-                            <td class="nivel-basico">El código es funcional pero con errores menores o comportamiento inesperado. Cumple algunos requerimientos básicos.</td>
-                            <td class="nivel-alto">Código bien escrito, mayormente libre de errores, y el prototipo es funcional cumpliendo los requerimientos clave del MVP.</td>
-                            <td class="nivel-superior">Código limpio, eficiente, bien comentado y robusto. Prototipo altamente funcional que excede los requerimientos del MVP.</td>
+                            <td class="nivel-bajo">El código tiene múltiples errores graves, no compila/ejecuta, o el
+                                prototipo es apenas funcional y no cumple requerimientos.</td>
+                            <td class="nivel-basico">El código es funcional pero con errores menores o comportamiento
+                                inesperado. Cumple algunos requerimientos básicos.</td>
+                            <td class="nivel-alto">Código bien escrito, mayormente libre de errores, y el prototipo es
+                                funcional cumpliendo los requerimientos clave del MVP.</td>
+                            <td class="nivel-superior">Código limpio, eficiente, bien comentado y robusto. Prototipo
+                                altamente funcional que excede los requerimientos del MVP.</td>
                         </tr>
                         <tr>
                             <td>4. Argumentación sobre Diseño de Software y Lógica de Código</td>
-                            <td class="nivel-bajo">No se justifican las decisiones de diseño o algoritmos, o los argumentos son inválidos/basados en opiniones.</td>
-                            <td class="nivel-basico">Justificaciones débiles o superficiales para el diseño y la lógica del código. Argumentación con imprecisiones.</td>
-                            <td class="nivel-alto">Justifica adecuadamente las decisiones clave de diseño, algoritmos y estructuras de control con argumentos lógicos y coherentes.</td>
-                            <td class="nivel-superior">Argumenta de manera rigurosa y persuasiva cada decisión crítica de diseño y lógica, demostrando profunda comprensión de los trade-offs.</td>
+                            <td class="nivel-bajo">No se justifican las decisiones de diseño o algoritmos, o los
+                                argumentos son inválidos/basados en opiniones.</td>
+                            <td class="nivel-basico">Justificaciones débiles o superficiales para el diseño y la lógica
+                                del código. Argumentación con imprecisiones.</td>
+                            <td class="nivel-alto">Justifica adecuadamente las decisiones clave de diseño, algoritmos y
+                                estructuras de control con argumentos lógicos y coherentes.</td>
+                            <td class="nivel-superior">Argumenta de manera rigurosa y persuasiva cada decisión crítica
+                                de diseño y lógica, demostrando profunda comprensión de los trade-offs.</td>
                         </tr>
                         <tr>
                             <td>5. Diseño de Interfaz (UI) y Experiencia de Usuario (UX)</td>
-                            <td class="nivel-bajo">Interfaz confusa, poco atractiva y difícil de usar. No considera al usuario.</td>
-                            <td class="nivel-basico">Interfaz funcional pero con problemas de usabilidad o estética. Consideraciones básicas de UX.</td>
-                            <td class="nivel-alto">Interfaz clara, intuitiva y estéticamente agradable. Buena experiencia de usuario para las funciones principales.</td>
-                            <td class="nivel-superior">Interfaz excepcional: innovadora, altamente intuitiva, visualmente atractiva y centrada en una excelente experiencia de usuario.</td>
+                            <td class="nivel-bajo">Interfaz confusa, poco atractiva y difícil de usar. No considera al
+                                usuario.</td>
+                            <td class="nivel-basico">Interfaz funcional pero con problemas de usabilidad o estética.
+                                Consideraciones básicas de UX.</td>
+                            <td class="nivel-alto">Interfaz clara, intuitiva y estéticamente agradable. Buena
+                                experiencia de usuario para las funciones principales.</td>
+                            <td class="nivel-superior">Interfaz excepcional: innovadora, altamente intuitiva,
+                                visualmente atractiva y centrada en una excelente experiencia de usuario.</td>
                         </tr>
                         <tr>
                             <td>6. Pruebas, Depuración y Calidad del Software</td>
-                            <td class="nivel-bajo">No se realizan pruebas sistemáticas. Muchos errores evidentes sin corregir. Código de baja calidad.</td>
-                            <td class="nivel-basico">Pruebas limitadas, algunos errores persistentes. Calidad de código mejorable.</td>
-                            <td class="nivel-alto">Se realizan pruebas adecuadas para las funciones clave, la mayoría de los errores se corrigen. Buena calidad de código.</td>
-                            <td class="nivel-superior">Proceso de pruebas exhaustivo y bien documentado. Software robusto y con alta calidad de código. Mínimos errores.</td>
+                            <td class="nivel-bajo">No se realizan pruebas sistemáticas. Muchos errores evidentes sin
+                                corregir. Código de baja calidad.</td>
+                            <td class="nivel-basico">Pruebas limitadas, algunos errores persistentes. Calidad de código
+                                mejorable.</td>
+                            <td class="nivel-alto">Se realizan pruebas adecuadas para las funciones clave, la mayoría de
+                                los errores se corrigen. Buena calidad de código.</td>
+                            <td class="nivel-superior">Proceso de pruebas exhaustivo y bien documentado. Software
+                                robusto y con alta calidad de código. Mínimos errores.</td>
                         </tr>
                         <tr>
                             <td>7. Colaboración, Gestión del Proyecto y Documentación</td>
-                            <td class="nivel-bajo">Poca colaboración, mala gestión de tareas. Documentación inexistente o muy deficiente.</td>
-                            <td class="nivel-basico">Colaboración intermitente, gestión de tareas básica. Documentación superficial o incompleta.</td>
-                            <td class="nivel-alto">Buena colaboración y comunicación. Gestión de tareas adecuada. Documentación clara y útil.</td>
-                            <td class="nivel-superior">Excelente colaboración y liderazgo compartido. Gestión de proyecto eficiente. Documentación exhaustiva, clara y profesional.</td>
+                            <td class="nivel-bajo">Poca colaboración, mala gestión de tareas. Documentación inexistente
+                                o muy deficiente.</td>
+                            <td class="nivel-basico">Colaboración intermitente, gestión de tareas básica. Documentación
+                                superficial o incompleta.</td>
+                            <td class="nivel-alto">Buena colaboración y comunicación. Gestión de tareas adecuada.
+                                Documentación clara y útil.</td>
+                            <td class="nivel-superior">Excelente colaboración y liderazgo compartido. Gestión de
+                                proyecto eficiente. Documentación exhaustiva, clara y profesional.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tabbuttons;
@@ -552,14 +747,15 @@
             }
             document.getElementById(tabName).style.display = "block";
             if (evt && evt.currentTarget) {
-                 evt.currentTarget.className += " active";
-            } else if (tabName === 'General' && document.querySelector('.tab-button')) { 
-                 document.querySelector('.tab-button').className += " active";
+                evt.currentTarget.className += " active";
+            } else if (tabName === 'General' && document.querySelector('.tab-button')) {
+                document.querySelector('.tab-button').className += " active";
             }
         }
         document.addEventListener('DOMContentLoaded', (event) => {
-            openTab(null, 'General'); 
+            openTab(null, 'General');
         });
     </script>
 </body>
+
 </html>

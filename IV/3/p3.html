@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Proyecto STEAM: Mate-Diseño 3D</title>
+    <style>
+        /* --- COLORES Y TIPOGRAFÍA EDUCAATE (EJEMPLO) --- */
+        :root {
+            --color-primario-azul: #005A9C;
+            --color-secundario-verde: #8BC53F;
+            --color-acento-naranja: #F58220;
+            --color-acento-morado: #6A0DAD; /* Un color vibrante para este proyecto */
+            --color-gris-claro: #f0f0f0;
+            --color-gris-medio: #cccccc;
+            --color-gris-oscuro: #333333;
+            --color-texto: #333333;
+            --font-titulos: 'Arial Narrow Bold', 'Barlow Condensed', sans-serif; 
+            --font-cuerpo: 'Open Sans', 'Lato', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-cuerpo);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-gris-claro);
+            color: var(--color-texto);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .project-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--color-primario-azul);
+            margin-bottom: 20px;
+            position: relative; /* Para banner de fondo */
+        }
+        .project-header::before { /* Pseudo-elemento para banner geométrico */
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23005a9c' fill-opacity='0.05'%3E%3Cpath d='M0 80L80 0H0v80zm80 0L0 0h80v80z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); /* Patrón geométrico sutil */
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+
+        .project-header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--color-primario-azul);
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-family: var(--font-titulos);
+            font-size: 2.5em;
+            color: var(--color-acento-morado); /* Color de acento para el título */
+            margin: 0;
+            text-shadow: 1px 1px 2px var(--color-gris-medio);
+        }
+
+        .project-subtitle {
+            font-size: 1.1em;
+            color: var(--color-gris-oscuro);
+            margin-top: 5px;
+        }
+
+        /* --- PESTAÑAS --- */
+        .tab-navigation {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid var(--color-gris-medio);
+        }
+
+        .tab-navigation li {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: var(--color-gris-claro);
+            border: 1px solid var(--color-gris-medio);
+            border-bottom: none;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+            font-family: var(--font-titulos);
+            font-size: 1.1em;
+            color: var(--color-primario-azul);
+        }
+
+        .tab-navigation li:hover {
+            background-color: #e0e0e0;
+        }
+
+        .tab-navigation li.active {
+            background-color: #fff;
+            border-bottom: 1px solid #fff;
+            color: var(--color-acento-morado);
+            font-weight: bold;
+            position: relative;
+            bottom: -1px;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid var(--color-gris-medio);
+            border-top: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2, .tab-content h3 {
+            font-family: var(--font-titulos);
+            color: var(--color-primario-azul);
+            border-bottom: 1px solid var(--color-secundario-verde);
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .tab-content h4 {
+            font-family: var(--font-titulos);
+            color: var(--color-acento-naranja);
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .emphasis-math { 
+            font-weight: bold;
+            color: var(--color-acento-morado);
+        }
+         .emphasis-tech-art { 
+            font-weight: bold;
+            color: var(--color-acento-naranja); 
+        }
+
+
+        .activity-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid var(--color-acento-morado); /* Borde con color de acento */
+            border-radius: 4px;
+        }
+        .activity-item .what-to-do strong, .activity-item .why strong {
+            font-family: var(--font-titulos);
+        }
+
+        .image-placeholder {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            min-height: 100px;
+            background-color: var(--color-gris-claro);
+            border: 2px dashed var(--color-gris-medio);
+            margin: 10px 0;
+            padding: 10px;
+            text-align: center;
+            font-style: italic;
+            color: var(--color-gris-oscuro);
+            font-size: 0.9em;
+            box-sizing: border-box;
+        }
+         .image-placeholder::before {
+            content: "🎨 "; /* Icono de arte/diseño */
+         }
+
+        .rubric-table { 
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.85em;
+        }
+        .rubric-table th, .rubric-table td {
+            border: 1px solid var(--color-gris-medio);
+            padding: 6px; 
+            text-align: left;
+            vertical-align: top;
+        }
+        .rubric-table th {
+            background-color: var(--color-primario-azul);
+            color: white;
+            font-family: var(--font-titulos);
+        }
+        .rubric-table td:first-child { 
+            font-weight: bold;
+            background-color: #e9f2f9;
+             min-width: 150px; 
+        }
+        .rubric-table th:nth-child(2) { background-color: #d1e0eb; color: var(--color-texto); } 
+        .rubric-table th:nth-child(3) { background-color: #a3c2dd; color: var(--color-texto); } 
+        .rubric-table th:nth-child(4) { background-color: #75a3ce; color: white; } 
+        .rubric-table th:nth-child(5) { background-color: var(--color-primario-azul); color: white; } 
+    </style>
+</head>
+<body>
+    <div class="container">
+		
+		<img src="P3IVBANNER.webp" style="width: 100%; height: 100%;"  >
+		
+        
+        <ul class="tab-navigation">
+            <li class="active" onclick="openTab(event, 'tab-general')">Información General</li>
+            <li onclick="openTab(event, 'tab-objetivos')">Objetivos Específicos</li>
+            <li onclick="openTab(event, 'tab-fases')">Fases y Actividades</li>
+            <li onclick="openTab(event, 'tab-evaluacion')">Recursos y Evaluación</li>
+            <li onclick="openTab(event, 'tab-rubrica')">Contexto y Rúbrica</li>
+        </ul>
+		
+		<br>	</br>
+		<img src="P3IVPODCATS.png" width="200px" height="50px" alt="imagen para audio"/>
+		
+		<audio controls>  <source src="Mate-Diseño 3D_ Creando Mundos Imposibles.wav" type="audio/mpeg">
+		</audio>
+
+        <!-- PESTAÑA 1: INFORMACIÓN GENERAL -->
+        <div id="tab-general" class="tab-content active">
+            <h2>Información General del Proyecto</h2>
+            
+            <h3>Áreas Integradas (con énfasis)</h3>
+            <ul>
+                <li><span class="emphasis-math">Matemáticas (Énfasis Principal - Resolución de Problemas, Pensamiento Espacial, Geometría, Medición)</span></li>
+                <li><span class="emphasis-tech-art">Tecnología e Informática (Énfasis Secundario Fuerte - Software de Diseño 2D/3D)</span></li>
+                <li><span class="emphasis-tech-art">Arte (Énfasis Secundario Fuerte - Diseño, Creatividad, Estética Visual)</span></li>
+                <li>Ciencias Naturales, Ingeniería, Lenguaje (Integración funcional/conceptual)</li>
+            </ul>
+
+			<img src="../../STEAM.png" style="width: 100%;"  >
+			
+            <h3>Idea/Tema Central del Proyecto</h3>
+			
+			<img src="Principios matemáticos para representar digitalmente.-01.webp" style="width: 60%; height: 100%;"  >
+			
+            <p>Los estudiantes explorarán y aplicarán principios matemáticos para diseñar y representar digitalmente o en maqueta estructuras arquitectónicas fantásticas, objetos "imposibles" o patrones tridimensionales complejos...</p>
+
+            <h3>Descripción del Problema o Desafío</h3>
+			
+			<img src="Descripción del Problema o Desafío - visual selection-01.webp" style="width: 60%; height: 100%;"  >
+			
+            <p>A menudo, las matemáticas se perciben como abstractas... El desafío es: <strong>¿Cómo podemos utilizar el poder de la geometría, las transformaciones y las proporciones matemáticas para diseñar y construir (digitalmente o en maqueta) una estructura, objeto o patrón visualmente fascinante que explore los límites de lo posible o lo estéticamente complejo, y justificar matemáticamente nuestras decisiones de diseño?</strong></p>
+
+            <h3>Objetivo General del Proyecto</h3>
+            <p>Desarrollar la competencia de resolución de problemas matemáticos y el pensamiento espacial en estudiantes..., mediante el diseño y creación de modelos 2D/3D inspirados en conceptos geométricos avanzados y el arte de la ilusión...</p>
+        </div>
+
+        <!-- PESTAÑA 2: OBJETIVOS ESPECÍFICOS -->
+        <div id="tab-objetivos" class="tab-content">
+            <h2>Objetivos Específicos de Aprendizaje</h2>
+             <ul>
+                <li><strong>OE1:</strong> Analizar obras artísticas y diseños para identificar principios matemáticos...
+                    <ul>
+                        <li><em>EBC Matemáticas (8-9):</em> Conjeturo y verifico propiedades...</li>
+                        <li><em>Habilidad S.XXI:</em> Pensamiento Crítico, Observación, Análisis.</li>
+                    </ul>
+                </li>
+                <li><strong>OE2:</strong> Resolver problemas geométricos y espaciales que surjan durante el proceso de diseño...
+                    <ul>
+                        <li><em>EBC Matemáticas (8-9):</em> Uso representaciones geométricas para resolver...</li>
+                        <li><em>Habilidad S.XXI:</em> Resolución de Problemas, Pensamiento Crítico, Creatividad.</li>
+                    </ul>
+                </li>
+                 <li><strong>OE3:</strong> Aplicar transformaciones geométricas y conceptos de proporción y escala...
+                    <ul>
+                        <li><em>EBC Matemáticas (8-9):</em> Identifico relaciones entre propiedades...</li>
+                        <li><em>EBC Tecnología e Informática (8-9):</em> Represento en gráficas bidimensionales, objetos 3D...</li>
+                        <li><em>Habilidad S.XXI:</em> Pensamiento Computacional, Alfabetización Tecnológica.</li>
+                    </ul>
+                </li>
+                <!-- Incluir aquí los demás OEs (OE4, OE5, OE6) con sus EBC y Habilidades S.XXI -->
+                <li><strong>OE4:</strong> Utilizar software de diseño 2D o 3D básico para modelar...</li>
+                <li><strong>OE5:</strong> Justificar las decisiones de diseño y las soluciones a problemas geométricos...</li>
+                <li><strong>OE6:</strong> Presentar y explicar el diseño final...</li>
+            </ul>
+        </div>
+
+        <!-- PESTAÑA 3: FASES Y ACTIVIDADES -->
+        <div id="tab-fases" class="tab-content">
+            <h2>Fases o Etapas del Proyecto (Metodología ABP)</h2>
+            
+            <div class="phase-item">
+                <h3>FASE 1: La Matemática Oculta en el Arte y el Diseño</h3>
+				
+                 <div class="activity-item">
+                <h4>Actividad 1.1: Explorando Universos Fascinantes.</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> ¡Hola, mate-diseñadores! Iniciaremos un viaje visual: analizaremos obras de M.C. Escher, arquitecturas fantásticas (reales o de ficción), diseños de niveles de videojuegos, o ilusiones ópticas. En equipos, identificarán: ¿Qué elementos geométricos ven? ¿Cómo se usa la perspectiva? ¿Hay patrones o transformaciones? ¿Qué les parece "imposible" o especialmente ingenioso?</div>
+                
+					 <img src="P3IVFASEACTF1.1.webp" style="width: 60%; height: 100%;"  >
+				
+					 
+                <div class="why"><strong>Por qué:</strong> Para descubrir que las matemáticas están detrás de muchas cosas que nos asombran y para empezar a entrenar nuestro ojo para ver la geometría en el arte y el diseño.</div>
+            </div>
+            <div class="activity-item">
+                <h4>Actividad 1.2: El Reto Creativo: Nuestra Pregunta Guía.</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Inspirados, definiremos nuestro desafío. Pregunta guía: <strong>"¿Cómo podemos diseñar y representar una estructura, objeto o patrón original, que sea visualmente impactante y se base en principios geométricos (como los que vimos), resolviendo los problemas matemáticos que esto implique?"</strong> Cada equipo puede empezar a pensar qué tipo de "mundo imposible" o diseño complejo le gustaría crear.</div>
+                
+				<img src="P3IVFASEACTF1.2.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> Esta pregunta nos da libertad creativa pero nos recuerda que las matemáticas serán nuestra principal herramienta y nuestro principal desafío a resolver.</div>
+            </div>
+
+            <h3>FASE 2: Dominando las Herramientas del Mate-Diseñador</h3>
+            <div class="activity-item">
+                <h4>Actividad 2.1: El Arsenal Matemático (Principios Geométricos Clave).</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Repasaremos o aprenderemos los conceptos matemáticos que necesitaremos: tipos de polígonos y poliedros, transformaciones geométricas (traslación, rotación, reflexión, homotecia), principios básicos de perspectiva, teselaciones, proporción áurea (opcional). Resolveremos pequeños problemas y ejercicios prácticos con estas herramientas.</div>
+                
+				<img src="P3IVFASEACTF2.1.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> Necesitamos conocer bien nuestras "herramientas" matemáticas para poder usarlas con creatividad y precisión al resolver los problemas de nuestros diseños.</div>
+            </div>
+            <div class="activity-item">
+                <h4>Actividad 2.2: Explorando el Software de Diseño (o Técnicas de Maquetación).</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Dedicaremos tiempo a aprender los fundamentos de un software de diseño 2D o 3D gratuito y accesible (ej. Tinkercad para 3D básico, Geogebra para exploraciones geométricas 2D/3D, Inkscape para 2D). Seguiremos tutoriales guiados para realizar formas básicas, aplicar transformaciones y ensamblar objetos. Si se opta por maquetas físicas, exploraremos técnicas de construcción con papel, cartón, palillos, etc.</div>
+                
+				<img src="P3IVFASEACTF2.2.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> La tecnología (o la técnica manual) será el medio para dar vida a nuestras ideas matemáticas. Dominar lo básico nos permitirá enfrentar problemas de diseño más complejos.</div>
+            </div>
+            
+            <h3>FASE 3: Conceptualizando lo Imposible (Ideación y Bocetaje Matemático)</h3>
+            <div class="activity-item">
+                <h4>Actividad 3.1: Lluvia de Ideas "Matemágicas".</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Cada equipo decidirá qué tipo de estructura, objeto o patrón "imposible" o complejo quiere diseñar. Harán una lluvia de ideas y seleccionarán la más prometedora, considerando los principios matemáticos que quieren explorar y los problemas que anticipan.</div>
+                
+				<img src="P3IVFASEACTF3.1.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> Es el momento de enfocar la creatividad y empezar a pensar cómo las matemáticas nos ayudarán a resolver el problema de representar nuestra visión.</div>
+            </div>
+            <div class="activity-item">
+                <h4>Actividad 3.2: Bocetos y Esquemas Geométricos (Resolviendo en Papel).</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Antes de ir al software o la maqueta, ¡lápiz y papel! Los equipos crearán bocetos detallados de su idea, tratando de resolver los primeros problemas de perspectiva, proporción y encaje de formas. Usarán reglas, compás, transportador. ¿Cómo se verá desde diferentes ángulos? ¿Qué medidas son cruciales? ¿Qué transformaciones geométricas aplicarán?</div>
+                
+				<img src="P3IVFASEACTF3.2.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> Planificar en papel y resolver los problemas geométricos iniciales de forma manual nos ahorra tiempo y frustración en la etapa digital o de construcción física.</div>
+            </div>
+
+            <h3>FASE 4: De la Idea al Modelo: Construyendo con Precisión Geométrica</h3>
+             <div class="activity-item">
+                <h4>Actividad 4.1: Modelado Digital (o Construcción de Maqueta).</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> ¡A materializar los diseños! Usando el software elegido (o los materiales de maqueta), los equipos comenzarán a construir su modelo digital o físico, aplicando los principios matemáticos y los bocetos de la fase anterior. Enfrentarán y resolverán problemas como: "¿Cómo creo esta curva exacta?", "¿Cómo hago que estas dos formas se unan perfectamente?", "¿Cómo aplico esta transformación para generar mi patrón?".</div>
+                
+				 <img src="P3IVFASEACTF4.1.webp" style="width: 60%; height: 100%;"  >
+				 
+                <div class="why"><strong>Por qué:</strong> Esta es la prueba de fuego para nuestros conocimientos matemáticos y habilidades de resolución de problemas. Cada clic o cada corte es una decisión basada en la geometría.</div>
+            </div>
+            <div class="activity-item">
+                <h4>Actividad 4.2: Aplicando Transformaciones y Patrones.</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Si el diseño incluye teselaciones, fractales simples o repeticiones mediante transformaciones, los estudiantes aplicarán estas técnicas. Resolverán problemas de cómo lograr la repetición exacta o el escalado adecuado para que el patrón funcione visual y matemáticamente.</div>
+                
+				<img src="P3IVFASEACTF4.2.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> Las transformaciones son herramientas matemáticas poderosas para crear complejidad y belleza a partir de formas simples. Resolver cómo aplicarlas correctamente es un desafío clave.</div>
+            </div>
+
+            <h3>FASE 5: Refinando la Creación: Iteración y Resolución de Desafíos</h3>
+            <div class="activity-item">
+                <h4>Actividad 5.1: Autocrítica y Coevaluación Geométrica.</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Los equipos revisarán críticamente sus modelos: ¿Se lograron los efectos visuales deseados? ¿Hay errores o inconsistencias matemáticas/geométricas? ¿Se resolvieron bien los problemas de encaje, perspectiva o proporción? Presentarán sus avances a otros equipos para recibir retroalimentación constructiva sobre los aspectos matemáticos y de diseño.</div>
+                
+				<img src="P3IVFASEACTF5.1.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> La revisión y la retroalimentación son esenciales para mejorar y para aprender de diferentes enfoques para resolver problemas similares.</div>
+            </div>
+            <div class="activity-item">
+                <h4>Actividad 5.2: Iterando el Diseño (Corrigiendo y Mejorando).</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Basados en la autocrítica y la retroalimentación, los equipos volverán a sus modelos para hacer ajustes, corregir errores y refinar sus diseños. Esto implicará resolver nuevos micro-problemas matemáticos para implementar las mejoras.</div>
+                
+				<img src="P3IVFASEACTF5.2.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> El diseño es un proceso iterativo. Resolver problemas, probar, fallar y volver a intentar es fundamental en matemáticas y en ingeniería.</div>
+            </div>
+            
+            <h3>FASE 6: Exhibición de Mundos Matemáticos</h3>
+             <div class="activity-item">
+                <h4>Actividad 6.1: Preparando la "Galería Matemática".</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Cada equipo preparará la presentación de su obra final. Esto podría incluir: el modelo digital (quizás una animación simple o vistas renderizadas), la maqueta física, bocetos clave del proceso, y una explicación escrita o grabada de los principios matemáticos utilizados, los problemas resueltos y las decisiones de diseño.</div>
+                
+				 <img src="P3IVFASEACTF6.1.webp" style="width: 60%; height: 100%;"  >
+				 
+                <div class="why"><strong>Por qué:</strong> Debemos ser capaces de comunicar no solo el resultado final, sino también el pensamiento matemático y el proceso de resolución de problemas que hay detrás.</div>
+            </div>
+            <div class="activity-item">
+                <h4>Actividad 6.2: ¡Vernissage! Presentación y Justificación Matemática.</h4>
+                <div class="what-to-do"><strong>Qué hacer:</strong> Se organizará una "Exhibición de Mate-Diseño 3D" donde cada equipo presentará su creación. Explicarán su inspiración, los conceptos matemáticos clave que aplicaron, los problemas geométricos que enfrentaron y cómo los resolvieron, y por qué su diseño es coherente y (esperemos) ¡asombroso!</div>
+                
+				<img src="P3IVFASEACTF6.2.webp" style="width: 60%; height: 100%;"  >
+				
+                <div class="why"><strong>Por qué:</strong> Es la oportunidad de celebrar la creatividad, el ingenio y el poder de las matemáticas para crear y resolver problemas, compartiendo nuestros "mundos imposibles" con otros.</div>
+            </div>
+        </div>
+			
+           
+        </div>
+
+        <!-- PESTAÑA 4: RECURSOS Y EVALUACIÓN -->
+        <div id="tab-evaluacion" class="tab-content">
+            <h2>Recursos Necesarios</h2>
+            <ul>
+                <li><strong>Software:</strong> Tinkercad, Geogebra, Blender (opc.), Inkscape (opc.).</li>
+                <li><strong>Hardware:</strong> Computadores con acceso a internet.</li>
+                <li><strong>Materiales para maquetas (opcional):</strong> Cartulina, cartón, pegamento, reglas, etc.</li>
+                <li><strong>Recursos de inspiración:</strong> Libros de arte, internet.</li>
+                <li><strong>(Opcional) Impresora 3D.</strong></li>
+            </ul>
+
+            <h2>Evaluación del Proyecto</h2>
+            <h3>Evaluación Formativa:</h3>
+            <ul>
+                <li>Calidad de análisis de obras.</li>
+                <li>Resolución de problemas geométricos en proceso.</li>
+                <li>Bocetos y esquemas geométricos.</li>
+                <li>Progreso en manejo de software/técnicas.</li>
+            </ul>
+            <h3>Evaluación Sumativa:</h3>
+            <ul>
+                <li>Calidad del diseño final (modelo/maqueta).</li>
+                <li>Justificación matemática del diseño.</li>
+                <li>Presentación oral/visual en exhibición.</li>
+                <li>(Opcional) Documento de proceso.</li>
+            </ul>
+
+            <h2>Producto(s) Final(es) o Evidencias Tangibles</h2>
+             <h3>Por equipo:</h3>
+            <ul>
+                <li>Modelo digital 3D del diseño o Maqueta física.</li>
+                <li>Presentación para la exhibición (con justificación matemática).</li>
+            </ul>
+            <h3>Individual:</h3>
+            <ul>
+                <li>Bocetos y contribuciones al diseño.</li>
+                <li>Reflexión sobre el proceso.</li>
+            </ul>
+        </div>
+
+        <!-- PESTAÑA 5: CONTEXTO Y RÚBRICA -->
+        <div id="tab-rubrica" class="tab-content">
+            <h2>Vinculación con el Contexto y la Comunidad</h2>
+            <p>Conexión con arte, diseño, arquitectura, videojuegos. Exhibición puede abrirse a la comunidad escolar. Inspira exploración de carreras STEAM. Fomenta apreciación de matemáticas en campos creativos.</p>
+
+            <h2>Rúbrica de Evaluación Detallada</h2>
+            <div style="overflow-x:auto;">
+                <table class="rubric-table">
+                    <thead>
+                        <tr>
+                            <th>CRITERIO DE EVALUACIÓN</th>
+                            <th>NIVEL BAJO (1.0-2.9)</th>
+                            <th>NIVEL BÁSICO (3.0-3.9)</th>
+                            <th>NIVEL ALTO (4.0-4.5)</th>
+                            <th>NIVEL SUPERIOR (4.6-5.0)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Identificación y Aplicación de Principios Matemáticos (OE1, OE3)</strong></td>
+                            <td>Identifica pocos o ningún principio matemático en obras o en su diseño; o los aplica incorrectamente.</td>
+                            <td>Identifica algunos principios matemáticos básicos y los aplica de forma elemental o con algunas imprecisiones en su diseño.</td>
+                            <td>Identifica y aplica correctamente varios principios matemáticos relevantes (geometría, transformaciones, proporción) en su diseño.</td>
+                            <td>Demuestra una comprensión profunda de principios matemáticos complejos y los aplica de forma innovadora y precisa en su diseño.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Resolución de Problemas Geométricos y de Diseño (OE2)</strong></td>
+                            <td>Evade o no logra resolver los problemas geométricos/espaciales básicos que presenta su diseño.</td>
+                            <td>Resuelve problemas geométricos simples con ayuda o mediante ensayo y error, sin una estrategia clara.</td>
+                            <td>Resuelve eficazmente los problemas geométricos y de representación que surgen en su diseño, aplicando estrategias adecuadas.</td>
+                            <td>Anticipa y resuelve problemas geométricos complejos de forma creativa y eficiente, demostrando un sólido razonamiento espacial.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Calidad Técnica y Creatividad del Modelo (Digital/Maqueta) (OE4, OE6)</strong></td>
+                            <td>El modelo es rudimentario, con errores técnicos evidentes, poco detallado o carece de originalidad.</td>
+                            <td>El modelo es funcionalmente básico, con algunos errores técnicos o estéticos. La creatividad es limitada.</td>
+                            <td>El modelo está bien ejecutado técnicamente, es visualmente atractivo y demuestra un buen nivel de creatividad y originalidad.</td>
+                            <td>El modelo es excepcional en su ejecución técnica, altamente creativo, original y con un fuerte impacto visual y conceptual.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Uso de Herramientas Tecnológicas/Técnicas de Maquetación (OE4)</strong></td>
+                            <td>Muestra dificultades significativas en el uso de las herramientas básicas de software o técnicas de maquetación.</td>
+                            <td>Utiliza las herramientas de software o técnicas de maquetación a un nivel básico para completar el modelo, pero con poca fluidez o exploración de capacidades.</td>
+                            <td>Utiliza eficientemente las herramientas de software o técnicas de maquetación, demostrando un buen manejo de sus funciones para lograr el diseño propuesto.</td>
+                            <td>Demuestra un uso avanzado y creativo de las herramientas de software o técnicas de maquetación, explorando sus posibilidades para enriquecer el diseño.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Justificación Matemática y Comunicación del Diseño (OE5, OE6)</strong></td>
+                            <td>La justificación matemática es inexistente, confusa o incorrecta. La comunicación del diseño es poco clara.</td>
+                            <td>Presenta una justificación matemática simple, con algunas omisiones o imprecisiones. La comunicación del diseño es básica.</td>
+                            <td>Justifica adecuadamente las decisiones de diseño con lenguaje matemático y representaciones visuales. Comunica el proyecto de forma clara y organizada.</td>
+                            <td>Presenta una justificación matemática robusta, detallada y precisa. Comunica el proyecto de forma elocuente, persuasiva y con un excelente uso de recursos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. Trabajo en Equipo y Colaboración (H. S.XXI)</strong></td>
+                            <td>Participación mínima o nula. Dificultades para colaborar, asumir roles o cumplir responsabilidades. Genera conflictos.</td>
+                            <td>Participa de forma irregular. Cumple algunas responsabilidades con supervisión. Colaboración inconsistente.</td>
+                            <td>Participa activamente, asume responsabilidades y colabora constructivamente. Respeta las ideas de los demás.</td>
+                            <td>Lidera o contribuye de forma excepcional, fomenta un ambiente productivo y de apoyo mutuo. Muestra iniciativa y proactividad.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7. Aplicación de la Competencia de Indagación en el Proceso Creativo (General)</strong></td>
+                            <td>Muestra poca evidencia de indagar (observar, cuestionar, planificar, probar, reflexionar) durante el proceso de diseño.</td>
+                            <td>Aplica algunos elementos de la indagación con guía (ej. explora algunas ideas, prueba soluciones simples).</td>
+                            <td>Aplica consistentemente la indagación en su proceso creativo: investiga, boceta alternativas, prueba soluciones a problemas de diseño, reflexiona sobre los resultados.</td>
+                            <td>Demuestra una aplicación sobresaliente y autónoma de la indagación, explorando profundamente, experimentando con soluciones matemáticas/de diseño y reflexionando críticamente.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-navigation")[0].getElementsByTagName("li");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementsByClassName("tab-navigation")[0].getElementsByTagName("li")[0].click();
+        });
+    </script>
+</body>
+</html>
