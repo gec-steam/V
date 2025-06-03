@@ -1,0 +1,29 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ciclo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.ciclo img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.ciclo img:hover {
+  transform: scale(1.05);
+}
